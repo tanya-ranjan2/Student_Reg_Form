@@ -1,0 +1,789 @@
+<!doctype html>
+                        <html>
+                            <head>
+                                <meta charset='utf-8'>
+                                <meta name='viewport' content='width=device-width, initial-scale=1'>
+                                <title>Snippet - GoSNippets</title>
+                                <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
+                                <link href='' rel='stylesheet'>
+                                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                                <meta charset="utf-8">
+  
+
+  
+    <title>Aligning Buttons</title>
+                                <style>
+body {
+    background:#1f2a36;
+}
+:root {
+  --background: #1f2a36;
+}
+svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: -400px;
+}
+.message-box {
+  height: 200px;
+  width: 380px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: 50px;
+  color: #FFF;
+  font-family: Roboto;
+  font-weight: 300;
+}
+.message-box h1 {
+  font-size: 60px;
+  line-height: 46px;
+  margin-bottom: 40px;
+}
+.buttons-con .action-link-wrap {
+  margin-top: 40px;
+}
+.buttons-con .action-link-wrap a {
+  background:#f2f2f2;
+  padding: 8px 25px;
+  border-radius: 4px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  text-decoration: none;
+  margin-right: 10px
+}
+
+.buttons-con .action-link-wrap a:hover {
+  background: #5A5C6C;
+  color: #fff;
+}
+
+#Polygon-1 , #Polygon-2 , #Polygon-3 , #Polygon-4 , #Polygon-4, #Polygon-5 {
+  animation: float 1s infinite ease-in-out alternate;
+}
+#Polygon-2 {
+  animation-delay: .2s; 
+}
+#Polygon-3 {
+  animation-delay: .4s; 
+}
+#Polygon-4 {
+  animation-delay: .6s; 
+}
+#Polygon-5 {
+  animation-delay: .8s; 
+}
+
+@keyframes float {
+	100% {
+    transform: translateY(20px);
+  }
+}
+@media (max-width: 450px) {
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -190px;
+  }
+  .message-box {
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -190px;
+    text-align: center;
+  }
+}
+.loader {
+  --duration: 3.5s;
+  --primary: #ffa217	;
+  --primary-light: #f5c47c	;
+  --primary-rgba: rgba(39, 94, 254, 0);
+  width: 200px;
+  height: 320px;
+  position: relative;
+  transform-style: preserve-3d;
+}
+@media (max-width: 480px) {
+  .loader {
+    zoom: 0.44;
+  }
+}
+.loader:before, .loader:after {
+  --r: 20.5deg;
+  content: '';
+  width: 320px;
+  height: 140px;
+  position: absolute;
+  right: 32%;
+  bottom: -11px;
+  background: var(--background);
+  transform: translateZ(200px) rotate(var(--r));
+  animation: mask var(--duration) linear forwards infinite;
+}
+.loader:after {
+  --r: -20.5deg;
+  right: auto;
+  left: 32%;
+}
+.loader .ground {
+  position: absolute;
+  left: -50px;
+  bottom: -120px;
+  transform-style: preserve-3d;
+  transform: rotateY(-47deg) rotateX(-15deg) rotateZ(15deg) scale(1);
+}
+.loader .ground div {
+  transform: rotateX(90deg) rotateY(0deg) translate(-48px, -120px) translateZ(100px) scale(0);
+  width: 200px;
+  height: 200px;
+  background: var(--primary);
+  background: linear-gradient(45deg, var(--primary) 0%, var(--primary) 50%, var(--primary-light) 50%, var(--primary-light) 100%);
+  transform-style: preserve-3d;
+  animation: ground var(--duration) linear forwards infinite;
+}
+.loader .ground div:before, .loader .ground div:after {
+  --rx: 90deg;
+  --ry: 0deg;
+  --x: 44px;
+  --y: 162px;
+  --z: -50px;
+  content: '';
+  width: 156px;
+  height: 300px;
+  opacity: 0;
+  background: linear-gradient(var(--primary), var(--primary-rgba));
+  position: absolute;
+  transform: rotateX(var(--rx)) rotateY(var(--ry)) translate(var(--x), var(--y)) translateZ(var(--z));
+  animation: ground-shine var(--duration) linear forwards infinite;
+}
+.loader .ground div:after {
+  --rx: 90deg;
+  --ry: 90deg;
+  --x: 0;
+  --y: 177px;
+  --z: 150px;
+}
+.loader .box {
+  --x: 0;
+  --y: 0;
+  position: absolute;
+  animation: var(--duration) linear forwards infinite;
+  transform: translate(var(--x), var(--y));
+}
+.loader .box div {
+  background-color: var(--primary);
+  width: 48px;
+  height: 48px;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: var(--duration) ease forwards infinite;
+  transform: rotateY(-47deg) rotateX(-15deg) rotateZ(15deg) scale(0);
+}
+.loader .box div:before, .loader .box div:after {
+  --rx: 90deg;
+  --ry: 0deg;
+  --z: 24px;
+  --y: -24px;
+  --x: 0;
+  content: '';
+  position: absolute;
+  background-color: inherit;
+  width: inherit;
+  height: inherit;
+  transform: rotateX(var(--rx)) rotateY(var(--ry)) translate(var(--x), var(--y)) translateZ(var(--z));
+  filter: brightness(var(--b, 1.2));
+}
+.loader .box div:after {
+  --rx: 0deg;
+  --ry: 90deg;
+  --x: 24px;
+  --y: 0;
+  --b: 1.4;
+}
+.loader .box.box0 {
+  --x: -220px;
+  --y: -120px;
+  left: 58px;
+  top: 108px;
+}
+.loader .box.box1 {
+  --x: -260px;
+  --y: 120px;
+  left: 25px;
+  top: 120px;
+}
+.loader .box.box2 {
+  --x: 120px;
+  --y: -190px;
+  left: 58px;
+  top: 64px;
+}
+.loader .box.box3 {
+  --x: 280px;
+  --y: -40px;
+  left: 91px;
+  top: 120px;
+}
+.loader .box.box4 {
+  --x: 60px;
+  --y: 200px;
+  left: 58px;
+  top: 132px;
+}
+.loader .box.box5 {
+  --x: -220px;
+  --y: -120px;
+  left: 25px;
+  top: 76px;
+}
+.loader .box.box6 {
+  --x: -260px;
+  --y: 120px;
+  left: 91px;
+  top: 76px;
+}
+.loader .box.box7 {
+  --x: -240px;
+  --y: 200px;
+  left: 58px;
+  top: 87px;
+}
+.loader .box0 {
+  animation-name: box-move0;
+}
+.loader .box0 div {
+  animation-name: box-scale0;
+}
+.loader .box1 {
+  animation-name: box-move1;
+}
+.loader .box1 div {
+  animation-name: box-scale1;
+}
+.loader .box2 {
+  animation-name: box-move2;
+}
+.loader .box2 div {
+  animation-name: box-scale2;
+}
+.loader .box3 {
+  animation-name: box-move3;
+}
+.loader .box3 div {
+  animation-name: box-scale3;
+}
+.loader .box4 {
+  animation-name: box-move4;
+}
+.loader .box4 div {
+  animation-name: box-scale4;
+}
+.loader .box5 {
+  animation-name: box-move5;
+}
+.loader .box5 div {
+  animation-name: box-scale5;
+}
+.loader .box6 {
+  animation-name: box-move6;
+}
+.loader .box6 div {
+  animation-name: box-scale6;
+}
+.loader .box7 {
+  animation-name: box-move7;
+}
+.loader .box7 div {
+  animation-name: box-scale7;
+}
+@keyframes box-move0 {
+  12% {
+    transform: translate(var(--x), var(--y));
+  }
+  25%, 52% {
+    transform: translate(0, 0);
+  }
+  80% {
+    transform: translate(0, -32px);
+  }
+  90%, 100% {
+    transform: translate(0, 188px);
+  }
+}
+@keyframes box-scale0 {
+  6% {
+    transform: rotateY(-47deg) rotateX(-15deg) rotateZ(15deg) scale(0);
+  }
+  14%, 100% {
+    transform: rotateY(-47deg) rotateX(-15deg) rotateZ(15deg) scale(1);
+  }
+}
+@keyframes box-move1 {
+  16% {
+    transform: translate(var(--x), var(--y));
+  }
+  29%, 52% {
+    transform: translate(0, 0);
+  }
+  80% {
+    transform: translate(0, -32px);
+  }
+  90%, 100% {
+    transform: translate(0, 188px);
+  }
+}
+@keyframes box-scale1 {
+  10% {
+    transform: rotateY(-47deg) rotateX(-15deg) rotateZ(15deg) scale(0);
+  }
+  18%, 100% {
+    transform: rotateY(-47deg) rotateX(-15deg) rotateZ(15deg) scale(1);
+  }
+}
+@keyframes box-move2 {
+  20% {
+    transform: translate(var(--x), var(--y));
+  }
+  33%, 52% {
+    transform: translate(0, 0);
+  }
+  80% {
+    transform: translate(0, -32px);
+  }
+  90%, 100% {
+    transform: translate(0, 188px);
+  }
+}
+@keyframes box-scale2 {
+  14% {
+    transform: rotateY(-47deg) rotateX(-15deg) rotateZ(15deg) scale(0);
+  }
+  22%, 100% {
+    transform: rotateY(-47deg) rotateX(-15deg) rotateZ(15deg) scale(1);
+  }
+}
+@keyframes box-move3 {
+  24% {
+    transform: translate(var(--x), var(--y));
+  }
+  37%, 52% {
+    transform: translate(0, 0);
+  }
+  80% {
+    transform: translate(0, -32px);
+  }
+  90%, 100% {
+    transform: translate(0, 188px);
+  }
+}
+@keyframes box-scale3 {
+  18% {
+    transform: rotateY(-47deg) rotateX(-15deg) rotateZ(15deg) scale(0);
+  }
+  26%, 100% {
+    transform: rotateY(-47deg) rotateX(-15deg) rotateZ(15deg) scale(1);
+  }
+}
+@keyframes box-move4 {
+  28% {
+    transform: translate(var(--x), var(--y));
+  }
+  41%, 52% {
+    transform: translate(0, 0);
+  }
+  80% {
+    transform: translate(0, -32px);
+  }
+  90%, 100% {
+    transform: translate(0, 188px);
+  }
+}
+@keyframes box-scale4 {
+  22% {
+    transform: rotateY(-47deg) rotateX(-15deg) rotateZ(15deg) scale(0);
+  }
+  30%, 100% {
+    transform: rotateY(-47deg) rotateX(-15deg) rotateZ(15deg) scale(1);
+  }
+}
+@keyframes box-move5 {
+  32% {
+    transform: translate(var(--x), var(--y));
+  }
+  45%, 52% {
+    transform: translate(0, 0);
+  }
+  80% {
+    transform: translate(0, -32px);
+  }
+  90%, 100% {
+    transform: translate(0, 188px);
+  }
+}
+@keyframes box-scale5 {
+  26% {
+    transform: rotateY(-47deg) rotateX(-15deg) rotateZ(15deg) scale(0);
+  }
+  34%, 100% {
+    transform: rotateY(-47deg) rotateX(-15deg) rotateZ(15deg) scale(1);
+  }
+}
+@keyframes box-move6 {
+  36% {
+    transform: translate(var(--x), var(--y));
+  }
+  49%, 52% {
+    transform: translate(0, 0);
+  }
+  80% {
+    transform: translate(0, -32px);
+  }
+  90%, 100% {
+    transform: translate(0, 188px);
+  }
+}
+@keyframes box-scale6 {
+  30% {
+    transform: rotateY(-47deg) rotateX(-15deg) rotateZ(15deg) scale(0);
+  }
+  38%, 100% {
+    transform: rotateY(-47deg) rotateX(-15deg) rotateZ(15deg) scale(1);
+  }
+}
+@keyframes box-move7 {
+  40% {
+    transform: translate(var(--x), var(--y));
+  }
+  53%, 52% {
+    transform: translate(0, 0);
+  }
+  80% {
+    transform: translate(0, -32px);
+  }
+  90%, 100% {
+    transform: translate(0, 188px);
+  }
+}
+@keyframes box-scale7 {
+  34% {
+    transform: rotateY(-47deg) rotateX(-15deg) rotateZ(15deg) scale(0);
+  }
+  42%, 100% {
+    transform: rotateY(-47deg) rotateX(-15deg) rotateZ(15deg) scale(1);
+  }
+}
+@keyframes ground {
+  0%, 65% {
+    transform: rotateX(90deg) rotateY(0deg) translate(-48px, -120px) translateZ(100px) scale(0);
+  }
+  75%, 90% {
+    transform: rotateX(90deg) rotateY(0deg) translate(-48px, -120px) translateZ(100px) scale(1);
+  }
+  100% {
+    transform: rotateX(90deg) rotateY(0deg) translate(-48px, -120px) translateZ(100px) scale(0);
+  }
+}
+@keyframes ground-shine {
+  0%, 70% {
+    opacity: 0;
+  }
+  75%, 87% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes mask {
+  0%, 65% {
+    opacity: 0;
+  }
+  66%, 100% {
+    opacity: 1;
+  }
+}
+body {
+  background: var(--background);
+}
+small {
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  font-family: Arial;
+  max-width: 320px;
+  font-size: 12px;
+  line-height: 19px;
+  z-index: 1;
+  color: #6C7486;
+}
+@media (min-width: 481px) {
+  small {
+    transform: translateX(-50%);
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  small {
+    left: 20px;
+    right: 112px;
+    font-size: 10px;
+    line-height: 17px;
+    transform: translateZ(400px);
+  }
+}
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+* {
+  box-sizing: inherit;
+}
+*:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .dribbble {
+  position: fixed;
+  display: block;
+  right: 24px;
+  bottom: 24px;
+}
+body .dribbble img {
+  display: block;
+  width: 76px;
+}
+
+.buttons-con .action-link-wrap {
+  margin-top: 40px;
+}
+.buttons-con .action-link-wrap a {
+  background:#ffa011;
+  padding: 8px 30px;
+  border-radius: 4px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 14px;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  text-decoration: none;
+  margin-right: 10px
+}
+
+.buttons-con .action-link-wrap a:hover {
+  background: #5A5C6C;
+  color: #fff;
+  
+}
+.button_slide {
+  color: #FFF;
+  border: 2px solid #fd9f10;
+  border-radius: 0px;
+  padding: 8px 56px;
+  display: inline-block;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #fd9f10;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
+.slide_down:hover {
+  box-shadow: inset 0 100px 0 0 #ff9900;
+}
+
+.slide_right:hover {
+  box-shadow: inset 400px 0 0 0 #ff9900;
+}
+
+.slide_left:hover {
+  box-shadow: inset 0 0 0 50px #ff9900;
+}
+
+.slide_diagonal:hover {
+  box-shadow: inset 400px 50px 0 0 #ff9900;
+}
+
+#outer {
+  width: 364px;
+  margin: 50px auto 0 auto;
+  text-align: center;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  padding: 40px 100px;
+  z-index: 100000;
+}
+
+.header__logo {
+  position: relative;
+  font-weight: 700;
+  color: #fff;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.header__nav {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header__list {
+  position: relative;
+  list-style: none;
+}
+
+.header__link {
+  position: relative;
+  margin: 0 15px;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  cursor: none;
+}
+
+.header.sticky {
+  padding: 5px 100px;
+  background: #fff;
+}
+
+.header.sticky .header__link {
+  color: #fff;
+}
+
+.header.sticky .header__logo {
+  color: #000;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url("../img/banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.banner::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+}
+
+</style>
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+                                <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+                                <script type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+                            </head>
+<body>
+  <div class="buttons-con">
+    <p style= "color: rgb(241, 231, 231); font-weight: lighter; font-size: 70px; " > AWS Web Services </p>
+    <p style= "color: rgb(241, 231, 231); font-weight: bold; font-size: 30px; " > Cloud Computing Project </p>
+    <br></br>
+    <a href="/register" class="button_slide slide_right"> REGISTER</a>
+
+
+  </div>
+  <header class="header">
+    <img src="https://mti.com/wp-content/uploads/2021/04/Amazon-Web-Services-Logo-White.png" alt="" width="158" height="96"  />
+  </header>
+
+  <div>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+
+    <br></br>
+    <br></br>
+    
+  </div>
+                            <div>  <img src="https://www.linkpicture.com/q/background_18.png" alt="" width="100" height="15" style="padding-left:150px; padding-bottom: 20px;" />
+                            </div>
+                            <div class="loader">
+                              <div class="box box0">
+                                  <div></div>
+                              </div>
+                              <div class="box box1">
+                                  <div></div>
+                              </div>
+                              <div class="box box2">
+                                  <div></div>
+                              </div>
+                              <div class="box box3">
+                                  <div></div>
+                              </div>
+                              <div class="box box4">
+                                  <div></div>
+                              </div>
+                              <div class="box box5">
+                                  <div></div>
+                              </div>
+                              <div class="box box6">
+                                  <div></div>
+                              </div>
+                              <div class="box box7">
+                                  <div></div>
+                              </div>
+                              <div class="ground">
+                                  <div>
+                                    
+                                  </div>
+                              </div>
+                          </div>
+<div class="message-box">
+  <div class="buttons-con">
+    <div class="action-link-wrap">
+     
+    </div>
+  </div>
+</div>
+                            </body>
+                        </html>
