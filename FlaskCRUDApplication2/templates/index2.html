@@ -1,0 +1,1404 @@
+
+<!-- saved from url=(0044)file:///C:/Users/raksh/Downloads/index1.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body><htnl>
+  <link rel="stylesheet" href="./static/index1_files/font-awesome.min.css">
+  <link rel="stylesheet" href="./static/index1_files/font-awesome.min(1).css">
+  <link rel="stylesheet" href="./static/index1_files/font-awesome.min(2).css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <style>
+html {
+  background-color: #223242;
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+.flex {
+  display: flex;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  padding: 40px 100px;
+  z-index: 100000;
+}
+
+.header__logo {
+  position: relative;
+  font-weight: 700;
+  color: #fff;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.header__nav {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header__list {
+  position: relative;
+  list-style: none;
+}
+
+.header__link {
+  position: relative;
+  margin: 0 15px;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  cursor: none;
+}
+
+.header.sticky {
+  padding: 5px 100px;
+  background: #fff;
+}
+
+.header.sticky .header__link {
+  color: #fff;
+}
+
+.header.sticky .header__logo {
+  color: #000;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url("../img/banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.banner::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+}
+section {
+	position: relative;
+	display: table;
+	font-family: 'Roboto', sans-serif;
+}
+	h1, h2 {
+		font-weight: 700;
+	}
+	h1 {
+		font-size: 2.8em;
+		text-transform: uppercase;
+		letter-spacing: 0.8em;
+		margin-top: 15%;
+	}
+	h2 {font-size: 2.2em;}
+
+.centered {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#home {
+	min-height: 100%;
+	background-color: #ffc707;
+	font-size: 1.2em;				/* 19px .ca */
+	text-transform: uppercase;
+}
+.switch-group {
+	width: 100%;
+}
+.switch-group p, .switch-group div {
+	float:  left;
+	width: 50%;
+	height: 3em;
+	margin: 0;
+	padding: 0.7em;
+	box-sizing: border-box;
+}
+.switch-group p {text-align: right; padding-top: 0.8em; padding-right: 1em;}
+.switch-group div {padding-left: 0.7em;}
+
+.cmd-toggle {
+	position: absolute;
+	visibility: hidden;
+	margin-left: -9999px;
+}
+
+input.cmd-toggle + label {
+	display: block;
+	position: relative;
+	cursor: pointer;
+	outline: none;
+	user-select: none;
+	padding: 2px;
+	width: 2.9em;
+	height: 1.3em;
+	background-color: rgb(255, 255, 255);
+	border-radius: 1.3em;
+}
+
+input.cmd-toggle + label:before,
+input.cmd-toggle + label:after {
+	display: block;
+	position: absolute;
+	content: "";
+}
+
+input.cmd-toggle + label:before {
+	top: 2px;
+	left: 2px;
+	bottom: 2px;
+	right: 2px;
+	background-color: #ffffff;
+	border-radius: 25px;
+	transition:  0.4s;
+}
+
+input.cmd-toggle + label:after {
+	top: 4px;
+	left: 4px;
+	bottom: 4px;
+	width: 21px;
+	background-color: rgb(255, 255, 255);
+	border-radius: 21px;
+	transition: margin 0.4s,  0.4s;
+}
+
+input.cmd-toggle:checked + label {
+	background-color: #8ce196;
+}
+
+input.cmd-toggle:checked + label:after {
+	background-color: #8ce196;
+	margin-left: 31px;
+}
+#align-toggle.cmd-toggle + label,
+#align-toggle.cmd-toggle + label:after {
+	background-color: #8ce196; /* #5bc3d8; */
+}
+
+#about {background-color: #f2092c;}
+#contact {background-color: #40c4ff;}
+
+#about > div {
+	width: 100%;
+	height: 100%;
+}
+
+.contacts {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	font-size: 2.2em;
+}
+	.contacts li {display: inline; margin: 0.25em;}
+	.contacts a {text-decoration: none; color: inherit;}
+		.contacts a:hover {color: #666;}
+
+/* Bomb-Menu Size and Positioning */
+
+.bomb-menu {
+  font-size: 0.8em;
+  /* change font-size here to scale menu accordingly */
+  
+  position: fixed;
+  /* menu position */
+  
+  top: 2.2em;
+  width: 5.2em;
+  /* menu toggle button size */
+  
+  height: 5.2em;
+}
+
+.right-menu {
+  right: 2.2em;
+}
+
+.left-menu {
+  left: 2.2em;
+}
+
+.bomb-menu .menu-toggle-btn,
+.bomb-menu .menuIcon,
+.bomb-menu .menu-item {
+  position: absolute;
+  top: 0;
+}
+
+.right-menu .menu-toggle-btn,
+.right-menu .menuIcon,
+.right-menu .menu-item {
+  right: 0;
+}
+
+.left-menu .menu-toggle-btn,
+.left-menu .menuIcon,
+.left-menu .menu-item {
+  left: 0;
+}
+
+.bomb-menu .menu-toggle-btn,
+.bomb-menu .menuIcon {
+  width: 100%;
+  height: 100%;
+}
+
+.bomb-menu .menu-item {
+  width: 5.0em;
+  /* inner elements size */
+  
+  height: 5.0em;
+}
+
+.bomb-menu .menu-item i {
+  font-size: 2em;
+}
+/* Bomb-Menu Style */
+
+.bomb-menu,
+.bomb-menu .menu-toggle-btn,
+.bomb-menu .menu-icon,
+.bomb-menu .menu-item,
+.bomb-menu a {
+  border-radius: 50%;
+}
+
+.bomb-menu {
+  cursor: pointer;
+  text-align: center;
+  color: #666;
+  z-index: 100;
+}
+
+.menu-toggle-btn {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 0;
+  padding: 0;
+  cursor: inherit;
+  background-color: #fffff0;
+  z-index: 101;
+}
+
+.menu-toggle-btn:focus {
+  outline: none;
+}
+
+.menu-icon {
+  pointer-events: none;
+}
+
+.bomb-menu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  visibility: hidden;
+}
+
+.active + ul {
+  visibility: visible;
+}
+
+.bomb-menu .menu-item {
+  background-color: #fffff0;
+  display: table;
+}
+
+.bomb-menu a {
+  display: table-cell;
+  vertical-align: middle;  /* vertical centering */
+  color: inherit;
+}
+/*********************** ANIMATIONS ***********************/
+/* Menu Icon Animation - Works for both right-aligned and left-aligned menu */
+
+.active {
+  animation: shake 600ms ease-in-out forwards;
+}
+
+.line {
+  transform: translateY(0px) rotate(0deg);
+  transition: transform 200ms linear;
+}
+/* transform-origin fix for Firefox v42 */
+.line1 {
+  transform-origin: 26px 18px;
+}
+.line2 {
+  transform-origin: 26px 26px;
+}
+.line3 {
+  transform-origin: 26px 34px;
+}
+
+.active .line1 {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.active .line2 {
+  transform: rotate(-45deg);
+}
+
+.active .line3 {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Menu Items Animation - right-aligned menu */
+.right-menu .active + ul > .mi-1 {
+  animation: rExplode1 80ms ease-out 530ms forwards;
+}
+
+.right-menu .active + ul > .mi-2 {
+  animation: rExplode2 80ms ease-out 530ms forwards;
+}
+
+.right-menu .active + ul > .mi-3 {
+  animation: rExplode3 80ms ease-out 530ms forwards;
+}
+
+/* Menu Items Animation - left-aligned menu */
+.left-menu .active + ul > .mi-1 {
+  animation: lExplode1 80ms ease-out 530ms forwards;
+}
+
+.left-menu .active + ul > .mi-2 {
+  animation: lExplode2 80ms ease-out 530ms forwards;
+}
+
+.left-menu .active + ul > .mi-3 {
+  animation: lExplode3 80ms ease-out 530ms forwards;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(5px);
+  }
+  4% {
+    transform: translateX(0px);
+  }
+  8% {
+   transform: translateX(-5px);
+  }
+  12% {
+    transform: translateX(0px);
+  }
+  15% {
+   transform: translateX(5px);
+  }
+  18% {
+   transform: translateX(0px);
+  }
+  21% {
+    transform: translateX(-5px);
+  }
+  24% {
+    transform: translateX(0px);
+  }
+  28% {
+    transform: translateX(5px);
+  }
+  32% {
+    transform: translateX(0px);
+  }
+  36% {
+    transform: translateX(-5px);
+  }
+  40% {
+    transform: translateX(0px);
+  }
+  44% {
+    transform: translateX(5px);
+  }
+  48% {
+    transform: translateX(0px);
+  }
+  52% {
+    transform: translateX(-5px);
+  }
+  56% {
+    transform: translateX(0px) scale(1);
+  }
+  85% {
+    transform: scale(0.7);
+  }
+  94% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* right-aligned menu only */
+@keyframes rExplode1 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  70% {
+    transform: translateX(-160%);
+  }
+  100% {
+    transform: translateX(-140%);
+  }
+}
+
+@keyframes rExplode2 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  70% {
+    transform: translate(-126%, 126%);
+  }
+  100% {
+    transform: translate(-106%, 106%);
+  }
+}
+
+@keyframes rExplode3 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  70% {
+    transform: translateY(160%);
+  }
+  100% {
+    transform: translateY(140%);
+  }
+}
+
+/* left-aligned menu: just change translateX sign */
+@keyframes lExplode1 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  70% {
+    transform: translateX(160%);
+  }
+  100% {
+    transform: translateX(140%);
+  }
+}
+
+@keyframes lExplode2 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  70% {
+    transform: translate(126%, 126%);
+  }
+  100% {
+    transform: translate(106%, 106%);
+  }
+}
+
+@keyframes lExplode3 {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  70% {
+    transform: translateY(160%);
+  }
+  100% {
+   transform: translateY(140%);
+  }
+}
+
+    </style>
+      <header class="header">
+        <img src="./static/index1_files/Amazon-Web-Services-Logo-White.png" alt="" width="158" height="96">
+        <nav class="bomb-menu right-menu chameleon-menu">
+          <button class="menu-toggle-btn">
+            <svg class="menu-icon" viewBox="0, 0, 52, 52">
+              <line class="line line1" x1="13" y1="18" x2="39" y2="18" stroke="#666" stroke-width="3"></line>
+              <line class="line line2" x1="13" y1="26" x2="39" y2="26" stroke="#666" stroke-width="3"></line>
+              <line class="line line3" x1="13" y1="34" x2="39" y2="34" stroke="#666" stroke-width="3"></line>
+            </svg>
+          </button>
+        
+          <ul>
+            <li class="menu-item mi-1">
+              <a href="/" title="Home">
+                <i class="fa fa-home"></i>
+              </a>
+            </li>
+            <li class="menu-item mi-2">
+              <a href="/register" title="Register">
+                <i class="fa fa-address-card"></i>
+              </a>
+            </li>
+            <li class="menu-item mi-3">
+              <a href="/table" title="Table">
+                <i class="fa fa-database"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+ </header>
+
+        <svg id="Capa_1" height="100%" class="flex" viewBox="0 0 1591.32 721" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <g id="dot_line_1" transform="translate(91.244 -338.96)" style="fill:#1d2028">
+              <circle id="circle3" class="dot-line1" cx="1231.5" cy="782.4" r=".946" data-svg-origin="1230.5499975390626 781.4540002636719" transform="matrix(1,0,0,1,0.00198,0.00002)" style="fill:rgb(255, 153, 0);;"></circle>
+              <circle id="circle5" class="dot-line1" cx="1239.3" cy="786.69" r=".946" data-svg-origin="1238.35400390625 785.7440185546875" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);;"></circle>
+              <circle id="circle7" class="dot-line1" cx="1247" cy="790.98" r=".945" data-svg-origin="1246.0649368554684 790.0349865722656" transform="matrix(1,0,0,1,-0.00247,0)" style="fill: rgb(255, 153, 0);;"></circle>
+              <circle id="circle9" class="dot-line1" cx="1254.8" cy="795.27" r=".945" data-svg-origin="1253.864901269531 794.3250061035156" transform="matrix(1,0,0,1,-0.00245,0)" style="fill: rgb(255, 153, 0);;"></circle>
+              <circle id="circle11" class="dot-line1" cx="1262.5" cy="799.56" r=".946" data-svg-origin="1261.553955078125 798.614013671875" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);;"></circle>
+              <circle id="circle13" class="dot-line1" cx="1270.3" cy="803.85" r=".946" data-svg-origin="1269.352001953125 802.9039958496094" transform="matrix(1,0,0,1,0.0020019531250454747,0)" style="fill: rgb(255, 153, 0);;"></circle>
+              <circle id="circle15" class="dot-line1" cx="1278" cy="808.15" r=".946" data-svg-origin="1277.0519775390626 807.2040202636719" transform="matrix(1,0,0,1,0.001977539062636424,0.000020263671899556357)" style="fill: rgb(255, 153, 0);;"></circle>
+              <circle id="circle17" class="dot-line1" cx="1285.8" cy="812.44" r=".946" data-svg-origin="1284.85400390625 811.4940185546875" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);;"></circle>
+              <circle id="circle19" class="dot-line1" cx="1293.5" cy="816.73" r=".945" data-svg-origin="1292.5550537109375 815.7849731445312" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);;"></circle>
+              <circle id="circle21" class="dot-line1" cx="1301.3" cy="821.02" r=".946" data-svg-origin="1300.35400390625 820.0740356445312" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);;"></circle>
+              <circle id="circle23" class="dot-line1" cx="1309" cy="825.31" r=".946" data-svg-origin="1308.053955078125 824.3639526367188" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);;"></circle>
+              <circle id="circle25" class="dot-line1" cx="1316.8" cy="829.6" r=".946" data-svg-origin="1315.85400390625 828.6539916992188" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);;"></circle>
+              <circle id="circle27" class="dot-line1" cx="1324.5" cy="833.89" r=".945" data-svg-origin="1323.5550537109375 832.9450073242188" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);;"></circle>
+              <circle id="circle29" class="dot-line1" cx="1332.3" cy="838.18" r=".945" data-svg-origin="1331.3711966507965 837.2432314917762" transform="matrix(1,0,0,1,-0.0026444248212555976,-0.0013549239762369325)" style="fill: rgb(255, 153, 0);;"></circle>
+              <circle id="circle31" class="dot-line1" cx="1340" cy="842.47" r=".946" data-svg-origin="1339.0504943847654 841.5240059814453" transform="matrix(1,0,0,1,0.0004943847654885758,0)" style="fill: rgb(255, 153, 0);;"></circle>
+              <circle id="circle33" class="dot-line1" cx="1347.8" cy="846.76" r=".946" data-svg-origin="1346.850500488281 845.8139956054688" transform="matrix(1,0,0,1,0.0005004882812045253,0)" style="fill: rgb(255, 153, 0);;"></circle>
+              <circle id="circle35" class="dot-line1" cx="1355.5" cy="851.05" r=".946" data-svg-origin="1354.553955078125 850.10400390625" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle37" class="dot-line1" cx="1363.3" cy="855.34" r=".946" data-svg-origin="1362.35400390625 854.39404296875" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle39" class="dot-line1" cx="1371" cy="859.63" r=".945" data-svg-origin="1370.0550537109375 858.6849975585938" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle41" class="dot-line1" cx="1378.8" cy="863.92" r=".945" data-svg-origin="1377.8551025390625 862.9750366210938" transform="matrix(2,0,0,2,-1377.8551025390625,-862.9750366210938)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle43" class="dot-line1" cx="1386.5" cy="868.22" r=".946" data-svg-origin="1385.553955078125 867.2740478515625" transform="matrix(2,0,0,2,-1385.553955078125,-867.2740478515625)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle45" class="dot-line1" cx="1394.3" cy="872.51" r=".946" data-svg-origin="1393.3501251220703 871.5639989013671" transform="matrix(2,0,0,2,-1393.35,-871.5639989013671)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle47" class="dot-line1" cx="1402" cy="876.8" r=".946" data-svg-origin="1401.0501235961915 875.8540001220704" transform="matrix(2,0,0,2,-1401.05,-875.8540001220704)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle49" class="dot-line1" cx="1409.8" cy="881.09" r=".945" data-svg-origin="1408.8551025390625 880.14501953125" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="circle51" class="dot-line1" cx="1417.5" cy="885.38" r=".945" data-svg-origin="1416.5550537109375 884.4349975585938" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+            </g>
+            <g id="dot_line_2" transform="translate(91.244 -338.96)" style="fill:#1d2028">
+              <circle id="circle54" class="dot-line2" cx="1159" cy="769.09" r=".945" data-svg-origin="1158.0550537109375 768.1449584960938" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle56" class="dot-line2" cx="1151.3" cy="773.38" r=".945" data-svg-origin="1150.3551025390625 772.4349975585938" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle58" class="dot-line2" cx="1143.4" cy="778.18" r=".946" data-svg-origin="1142.4539794921875 777.2340087890625" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle60" class="dot-line2" cx="1135.4" cy="782.97" r=".945" data-svg-origin="1134.455078125 782.0250244140625" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle62" class="dot-line2" cx="1127.3" cy="787.46" r=".946" data-svg-origin="1126.35400390625 786.5140380859375" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle64" class="dot-line2" cx="1119.1" cy="792.19" r=".945" data-svg-origin="1118.155029296875 791.2449951171875" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle66" class="dot-line2" cx="1110.7" cy="797.2" r=".946" data-svg-origin="1109.75390625 796.2540283203125" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle68" class="dot-line2" cx="1102.6" cy="801.87" r=".946" data-svg-origin="1101.6539306640625 800.9240112304688" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse70" class="dot-line2" cx="1094.5" cy="806.46" r=".946" data-svg-origin="1093.553955078125 805.5140380859375" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle72" class="dot-line2" cx="1086.1" cy="811.22" r=".946" data-svg-origin="1085.1539306640625 810.2740478515625" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle74" class="dot-line2" cx="1078.4" cy="815.76" r=".945" data-svg-origin="1077.455078125 814.8150024414062" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle76" class="dot-line2" cx="1069.6" cy="820.84" r=".946" data-svg-origin="1068.6539306640625 819.89404296875" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse78" class="dot-line2" cx="1061.8" cy="825.27" r=".946" data-svg-origin="1060.85400390625 824.3240356445312" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle80" class="dot-line2" cx="1053.3" cy="830.27" r=".946" data-svg-origin="1052.35400390625 829.3240356445312" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle82" class="dot-line2" cx="1045.2" cy="834.77" r=".945" data-svg-origin="1044.2625024414065 833.8250061035156" transform="matrix(1,0,0,1,-0.0025,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle84" class="dot-line2" cx="1037.4" cy="839.4" r=".945" data-svg-origin="1036.4624590624999 838.4550085449218" transform="matrix(1,0,0,1,-0.00246,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle86" class="dot-line2" cx="1030" cy="843.73" r=".945" data-svg-origin="1029.0550537109375 842.7849731445312" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle88" class="dot-line2" cx="1021.5" cy="848.62" r=".945" data-svg-origin="1020.5549926757812 847.6749877929688" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle90" class="dot-line2" cx="1012.6" cy="853.66" r=".946" data-svg-origin="1011.6539916992188 852.7139892578125" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle92" class="dot-line2" cx="1006.1" cy="857.5" r=".945" data-svg-origin="1005.1425641308595 856.5549963378905" transform="matrix(1,0,0,1,0.00248,0)" style="fill: #ff9900;"></circle>
+              <circle id="circle94" class="dot-line2" cx="998.37" cy="862.05" r=".945" data-svg-origin="997.4432093004377 861.120887030959" transform="matrix(1,0,0,1,-0.00911,-0.00795)" style="fill: #ff9900;"></circle>
+              <circle id="circle96" class="dot-line2" cx="989.82" cy="867.03" r=".946" data-svg-origin="988.87401171875 866.0839921874999" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle98" class="dot-line2" cx="981.84" cy="871.58" r=".946" data-svg-origin="980.894001484375 870.6339860839844" transform="matrix(1,0,0,1,0.00002,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle100" class="dot-line2" cx="973.38" cy="876.22" r=".945" data-svg-origin="972.4349975585938 875.2750244140625" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle102" class="dot-line2" cx="965.87" cy="880.58" r=".945" data-svg-origin="964.9249877929688 879.6349487304688" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle104" class="dot-line2" cx="957.2" cy="885.72" r=".946" data-svg-origin="956.2540283203125 884.7740478515625" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle106" class="dot-line2" cx="949.71" cy="890.02" r=".945" data-svg-origin="948.7649536132812 889.0750122070312" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle108" class="dot-line2" cx="941.6" cy="894.75" r=".946" data-svg-origin="940.6539916992188 893.8040161132812" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle110" class="dot-line2" cx="933.75" cy="899.21" r=".945" data-svg-origin="932.8049926757812 898.2649536132812" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle112" class="dot-line2" cx="925.73" cy="903.82" r=".946" data-svg-origin="924.7839965820312 902.8740234375" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle114" class="dot-line2" cx="917.14" cy="908.74" r=".946" data-svg-origin="916.1940307617188 907.7940673828125" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle116" class="dot-line2" cx="908.94" cy="913.62" r=".946" data-svg-origin="907.9940795898438 912.6740112304688" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle118" class="dot-line2" cx="900.8" cy="918.2" r=".946" data-svg-origin="899.85400390625 917.2540283203125" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle120" class="dot-line2" cx="893.29" cy="922.6" r=".945" data-svg-origin="892.3450317382812 921.6549682617188" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle122" class="dot-line2" cx="886.35" cy="926.68" r=".946" data-svg-origin="885.4039916992188 925.7340087890625" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle124" class="dot-line2" cx="878.22" cy="931.28" r=".945" data-svg-origin="877.2750244140625 930.3349609375" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle126" class="dot-line2" cx="870.05" cy="935.99" r=".946" data-svg-origin="869.10400390625 935.0440673828125" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle128" class="dot-line2" cx="861.88" cy="940.64" r=".946" data-svg-origin="860.9340209960938 939.6940307617188" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle130" class="dot-line2" cx="853.93" cy="945.34" r=".946" data-svg-origin="852.9840087890625 944.39404296875" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle132" class="dot-line2" cx="844.16" cy="950.88" r=".946" data-svg-origin="843.2139892578125 949.9340209960938" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle134" class="dot-line2" cx="1416.5" cy="621.51" r=".945" data-svg-origin="1415.5550537109375 620.5650024414062" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle136" class="dot-line2" cx="1409.1" cy="625.84" r=".946" data-svg-origin="1408.1539306640625 624.8939819335938" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle138" class="dot-line2" cx="1400.6" cy="630.73" r=".946" data-svg-origin="1399.650001333008 629.7839995727538" transform="matrix(1,0,0,1,0.00049,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle140" class="dot-line2" cx="1391.8" cy="635.77" r=".946" data-svg-origin="1390.850000488281 634.8240044555664" transform="matrix(1,0,0,1,0.0005,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle142" class="dot-line2" cx="1385.2" cy="639.61" r=".946" data-svg-origin="1384.25390625 638.6640014648438" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle144" class="dot-line2" cx="1377.5" cy="644.16" r=".945" data-svg-origin="1376.5550537109375 643.2150268554688" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle146" class="dot-line2" cx="1368.9" cy="649.14" r=".945" data-svg-origin="1367.955078125 648.1950073242188" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle148" class="dot-line2" cx="1361" cy="653.68" r=".946" data-svg-origin="1360.053955078125 652.7340087890625" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle150" class="dot-line2" cx="1352.5" cy="658.33" r=".946" data-svg-origin="1351.553955078125 657.3839721679688" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle152" class="dot-line2" cx="1345" cy="662.69" r=".945" data-svg-origin="1344.0550537109375 661.7449951171875" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle154" class="dot-line2" cx="1336.3" cy="667.82" r=".946" data-svg-origin="1335.35400390625 666.8740234375" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle156" class="dot-line2" cx="1328.8" cy="672.13" r=".945" data-svg-origin="1327.8551025390625 671.1849975585938" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle158" class="dot-line2" cx="1320.7" cy="676.86" r=".945" data-svg-origin="1319.7550048828125 675.9149780273438" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle160" class="dot-line2" cx="1312.9" cy="681.32" r=".946" data-svg-origin="1311.9539794921875 680.3740234375" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle162" class="dot-line2" cx="1304.9" cy="685.93" r=".945" data-svg-origin="1303.955078125 684.9849853515625" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle164" class="dot-line2" cx="1296.3" cy="690.84" r=".946" data-svg-origin="1295.35400390625 689.8939819335938" transform="matrix(1.81,0,0,1.81,-1049.2367431643988,-558.81412536639)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle166" class="dot-line2" cx="1288.1" cy="695.73" r=".945" data-svg-origin="1287.155029296875 694.7849731445312" transform="matrix(2,0,0,2,-1287.155029296875,-694.7849731445312)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle168" class="dot-line2" cx="1279.9" cy="700.31" r=".946" data-svg-origin="1278.9539794921875 699.364013671875" transform="matrix(2,0,0,2,-1278.9539794921875,-699.364013671875)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle170" class="dot-line2" cx="1272.4" cy="704.71" r=".946" data-svg-origin="1271.4539794921875 703.7640380859375" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle172" class="dot-line2" cx="1265.5" cy="708.79" r=".945" data-svg-origin="1264.5550537109375 707.844970703125" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle174" class="dot-line2" cx="1257.3" cy="713.39" r=".946" data-svg-origin="1256.35400390625 712.4440307617188" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle176" class="dot-line2" cx="1249.2" cy="718.1" r=".946" data-svg-origin="1248.25390625 717.1539916992188" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle178" class="dot-line2" cx="1241" cy="722.75" r=".946" data-svg-origin="1240.053955078125 721.8040161132812" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle180" class="dot-line2" cx="1233.1" cy="727.45" r=".945" data-svg-origin="1232.1575146484374 726.5050024414063" transform="matrix(2,0,0,2,-1232.16,-726.5050024414063)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle182" class="dot-line2" cx="1223.3" cy="732.99" r=".945" data-svg-origin="1222.357551269531 732.0449914550782" transform="matrix(2,0,0,2,-1222.36,-732.0449914550782)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="circle184" class="dot-line2" cx="1211.5" cy="739.85" r=".945" data-svg-origin="1210.5550537109375 738.9049682617188" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+            </g>
+            <g id="dot_line_3" transform="translate(91.244 -338.96)" style="fill:#1d2028">
+              <circle id="ellipse187" class="dot-line3" cx="790" cy="933.33" r=".946" data-svg-origin="789.0540161132812 932.3839721679688" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse189" class="dot-line3" cx="797.66" cy="937.62" r=".946" data-svg-origin="796.7140502929688 936.6740112304688" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse191" class="dot-line3" cx="782.22" cy="928.87" r=".946" data-svg-origin="781.2740478515625 927.9240112304688" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse193" class="dot-line3" cx="774.16" cy="924.13" r=".946" data-svg-origin="773.2140502929688 923.1840209960938" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse195" class="dot-line3" cx="766.1" cy="919.4" r=".946" data-svg-origin="765.1539916992188 918.4540405273438" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse197" class="dot-line3" cx="758.04" cy="914.66" r=".946" data-svg-origin="757.093994140625 913.7139892578125" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse199" class="dot-line3" cx="749.98" cy="909.92" r=".946" data-svg-origin="749.0339965820312 908.9740600585938" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse201" class="dot-line3" cx="741.93" cy="905.18" r=".945" data-svg-origin="740.9849853515625 904.2349853515625" transform="matrix(1.80999,0,0,1.80999,-600.1978381345878,-732.4303381345487)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse203" class="dot-line3" cx="733.87" cy="900.45" r=".946" data-svg-origin="732.924648611053 899.5040458525588" transform="matrix(2,0,0,2,-732.9248086110531,-899.5040458525588)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse205" class="dot-line3" cx="725.81" cy="895.71" r=".946" data-svg-origin="724.8640068359375 894.7639885253907" transform="matrix(2,0,0,2,-724.8640068359375,-894.7639885253907)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse207" class="dot-line3" cx="717.75" cy="890.97" r=".946" data-svg-origin="716.8040080566407 890.0239639257813" transform="matrix(1,0,0,1,0,0.00002)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse209" class="dot-line3" cx="709.69" cy="886.24" r=".945" data-svg-origin="708.7449951171875 885.2950439453125" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse211" class="dot-line3" cx="701.63" cy="881.5" r=".946" data-svg-origin="700.6840209960938 880.5540161132812" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse213" class="dot-line3" cx="693.58" cy="876.77" r=".946" data-svg-origin="692.6339721679688 875.8240356445312" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse215" class="dot-line3" cx="685.52" cy="872.03" r=".946" data-svg-origin="684.5740356445312 871.083984375" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse217" class="dot-line3" cx="677.46" cy="867.29" r=".946" data-svg-origin="676.5140380859375 866.3440551757812" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse219" class="dot-line3" cx="669.4" cy="862.56" r=".946" data-svg-origin="668.4540405273438 861.6139526367188" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse221" class="dot-line3" cx="661.34" cy="857.82" r=".946" data-svg-origin="660.4047212758048 856.8883002349737" transform="matrix(1,0,0,1,-0.00358,-0.00476)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse223" class="dot-line3" cx="653.28" cy="853.08" r=".945" data-svg-origin="652.334990234375 852.1350021826172" transform="matrix(2,0,0,2,-652.334990234375,-852.1350021826172)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse225" class="dot-line3" cx="645.22" cy="848.34" r=".946" data-svg-origin="644.2740019628907 847.3940007421875" transform="matrix(2,0,0,2,-644.2740019628907,-847.3940007421875)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse227" class="dot-line3" cx="637.16" cy="843.61" r=".945" data-svg-origin="636.2150268554688 842.6649780273438" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse229" class="dot-line3" cx="629.1" cy="838.87" r=".946" data-svg-origin="628.1539916992188 837.9240112304688" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse231" class="dot-line3" cx="621.05" cy="834.14" r=".946" data-svg-origin="620.10400390625 833.1940307617188" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse233" class="dot-line3" cx="612.99" cy="829.4" r=".946" data-svg-origin="612.044001586914 828.454010131836" transform="matrix(2,0,0,2,-612.044001586914,-828.454010131836)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse235" class="dot-line3" cx="604.93" cy="824.66" r=".946" data-svg-origin="603.9840021972657 823.7139973144531" transform="matrix(2,0,0,2,-603.9840021972657,-823.7139973144531)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse237" class="dot-line3" cx="596.87" cy="819.93" r=".945" data-svg-origin="595.9249877929688 818.9849853515625" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse239" class="dot-line3" cx="588.81" cy="815.19" r=".946" data-svg-origin="587.864013671875 814.2440185546875" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse241" class="dot-line3" cx="580.75" cy="810.45" r=".946" data-svg-origin="579.8040161132812 809.5040283203125" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse243" class="dot-line3" cx="572.7" cy="805.72" r=".946" data-svg-origin="571.7540283203125 804.7740478515625" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse245" class="dot-line3" cx="564.64" cy="800.98" r=".946" data-svg-origin="563.6940307617188 800.0339965820312" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse247" class="dot-line3" cx="556.58" cy="796.24" r=".946" data-svg-origin="555.6339721679688 795.2940063476562" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse249" class="dot-line3" cx="548.52" cy="791.51" r=".946" data-svg-origin="547.5740356445312 790.5640258789062" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse251" class="dot-line3" cx="540.46" cy="786.77" r=".945" data-svg-origin="539.5150004577636 785.8250003814697" transform="matrix(2,0,0,2,-539.5150004577636,-785.8250003814697)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse253" class="dot-line3" cx="532.4" cy="782.03" r=".946" data-svg-origin="531.4540012664795 781.0839995117187" transform="matrix(2,0,0,2,-531.4540012664795,-781.0839995117187)" style="fill: #ff9900;"></circle>
+              <circle id="ellipse255" class="dot-line3" cx="524.34" cy="777.3" r=".946" data-svg-origin="523.3943450350603 776.3530413146797" transform="matrix(1.36,0,0,1.36,-188.422,-279.487)" style="fill: #ff9900;"></circle>
+              <circle id="ellipse257" class="dot-line3" cx="516.29" cy="772.56" r=".946" data-svg-origin="515.343994140625 771.614013671875" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+            </g>
+            <g id="dot_line_4" transform="translate(91.244 -338.96)" style="fill:#1d2028">
+              <circle id="circle260" class="dot-line4" r="0" data-svg-origin="0 0" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              cx="1231.505" cy="782.401" r=".946"/&gt;
+              <circle id="ellipse262" class="dot-line4" cx="509.83" cy="769.89" r=".946" data-svg-origin="508.88397216796875 768.9440307617188" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse264" class="dot-line4" cx="265.15" cy="911.14" r=".946" data-svg-origin="264.2039794921875 910.1940307617188" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse266" class="dot-line4" cx="274.11" cy="906.48" r=".946" data-svg-origin="273.16400146484375 905.5339965820312" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse268" class="dot-line4" cx="280.34" cy="902.77" r=".946" data-svg-origin="279.39398193359375 901.8240356445312" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse270" class="dot-line4" cx="290.13" cy="896.87" r=".946" data-svg-origin="289.1839904785156 895.9240112304688" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse272" class="dot-line4" cx="295" cy="894.29" r=".946" data-svg-origin="294.0539855957031 893.3440551757812" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse274" class="dot-line4" cx="303.17" cy="889.76" r=".946" data-svg-origin="302.2239685058594 888.81396484375" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse276" class="dot-line4" cx="311.25" cy="884.92" r=".946" data-svg-origin="310.3039855957031 883.9740600585938" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse278" class="dot-line4" cx="319.2" cy="880.3" r=".946" data-svg-origin="318.2539978027344 879.35400390625" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse280" class="dot-line4" cx="327.38" cy="875.56" r=".946" data-svg-origin="326.4339952392578 874.6140563183592" transform="matrix(1,0,0,1,0,-0.00002)" style="fill: #ff9900;"></circle>
+              <circle id="ellipse282" class="dot-line4" cx="335.41" cy="870.96" r=".946" data-svg-origin="334.4639946289062 870.0139885253907" transform="matrix(1,0,0,1,0,0)" style="fill: #ff9900;"></circle>
+              <circle id="ellipse284" class="dot-line4" cx="343.47" cy="866.23" r=".946" data-svg-origin="342.52398681640625 865.2839965820312" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse286" class="dot-line4" cx="351.46" cy="861.66" r=".946" data-svg-origin="350.5140075683594 860.7139892578125" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse288" class="dot-line4" cx="359.6" cy="857" r=".946" data-svg-origin="358.65399169921875 856.0540161132812" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse290" class="dot-line4" cx="367.66" cy="852.35" r=".946" data-svg-origin="366.7139892578125 851.4039916992188" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse292" class="dot-line4" cx="375.69" cy="847.66" r=".946" data-svg-origin="374.7439880371094 846.7139892578125" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse294" class="dot-line4" cx="383.76" cy="843.08" r=".946" data-svg-origin="382.8139976806641 842.1339860839844" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse296" class="dot-line4" cx="391.76" cy="838.35" r=".945" data-svg-origin="390.81500122070315 837.4049841308594" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse298" class="dot-line4" cx="399.81" cy="833.76" r=".946" data-svg-origin="398.8639831542969 832.81396484375" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse300" class="dot-line4" cx="407.89" cy="829.02" r=".946" data-svg-origin="406.9439697265625 828.0740356445312" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse302" class="dot-line4" cx="416.01" cy="824.42" r=".946" data-svg-origin="415.0639953613281 823.4740600585938" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse304" class="dot-line4" cx="424.03" cy="819.78" r=".946" data-svg-origin="423.0839538574219 818.833984375" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse306" class="dot-line4" cx="432.08" cy="815" r=".946" data-svg-origin="431.13397216796875 814.0540161132812" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse308" class="dot-line4" cx="440.24" cy="810.44" r=".945" data-svg-origin="439.29499145507816 809.4949975585937" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse310" class="dot-line4" cx="448.3" cy="805.79" r=".946" data-svg-origin="447.35398669433596 804.8439970703125" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse312" class="dot-line4" cx="456.33" cy="801.08" r=".946" data-svg-origin="455.38397216796875 800.1339721679688" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse314" class="dot-line4" cx="464.33" cy="796.54" r=".946" data-svg-origin="463.38397216796875 795.593994140625" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse316" class="dot-line4" cx="472.4" cy="791.82" r=".946" data-svg-origin="471.4539794921875 790.8740234375" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse318" class="dot-line4" cx="480.48" cy="787.17" r=".946" data-svg-origin="479.5339660644531 786.2240600585938" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse320" class="dot-line4" cx="488.58" cy="782.59" r=".946" data-svg-origin="487.63397216796875 781.6439819335938" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse322" class="dot-line4" cx="496.61" cy="777.89" r=".946" data-svg-origin="495.66400146484375 776.9440307617188" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse324" class="dot-line4" cx="504.68" cy="773.22" r=".946" data-svg-origin="503.7339782714844 772.2740478515625" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse326" class="dot-line4" cx="517.61" cy="765.91" r=".946" data-svg-origin="516.6640014648438 764.9640502929688" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse328" class="dot-line4" cx="524.97" cy="761.35" r=".946" data-svg-origin="524.0240478515625 760.4039916992188" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse330" class="dot-line4" cx="533.15" cy="756.8" r=".946" data-svg-origin="532.2040405273438 755.85400390625" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse332" class="dot-line4" cx="541.23" cy="752.21" r=".946" data-svg-origin="540.2839965820312 751.2640380859375" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse334" class="dot-line4" cx="546.43" cy="749.17" r=".946" data-svg-origin="545.4840087890625 748.2240600585938" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse336" class="dot-line4" cx="554.54" cy="744.43" r=".946" data-svg-origin="553.593994140625 743.4840087890625" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse338" class="dot-line4" cx="562.53" cy="739.74" r=".946" data-svg-origin="561.583984375 738.7940063476562" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse340" class="dot-line4" cx="571.87" cy="734.12" r=".945" data-svg-origin="570.9249877929688 733.1749877929688" transform="matrix(2,0,0,2,-570.9249877929688,-733.1749877929688)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse342" class="dot-line4" cx="577.22" cy="731.45" r=".946" data-svg-origin="576.2740478515625 730.5040283203125" transform="matrix(2,0,0,2,-576.2740478515625,-730.5040283203125)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse344" class="dot-line4" cx="585.26" cy="726.74" r=".946" data-svg-origin="584.3140258789062 725.7940063476562" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse346" class="dot-line4" cx="593.55" cy="721.83" r=".946" data-svg-origin="592.60400390625 720.8839721679688" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse348" class="dot-line4" cx="602.28" cy="716.82" r=".945" data-svg-origin="601.3349609375 715.875" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse350" class="dot-line4" cx="610.7" cy="711.94" r=".946" data-svg-origin="609.7540283203125 710.9940185546875" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse352" class="dot-line4" cx="618.11" cy="707.78" r=".946" data-svg-origin="617.1632768942136 706.8346942962031" transform="matrix(1,0,0,1,0.00016,-0.00016)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse354" class="dot-line4" cx="626.83" cy="702.77" r=".946" data-svg-origin="625.8839930419922 701.8240089111328" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse356" class="dot-line4" cx="635.12" cy="697.87" r=".946" data-svg-origin="634.1740028076172 696.9240028076172" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse358" class="dot-line4" cx="641.42" cy="694.25" r=".946" data-svg-origin="640.4740600585938 693.3040161132812" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse360" class="dot-line4" cx="649.79" cy="689.42" r=".946" data-svg-origin="648.843994140625 688.4740600585938" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse362" class="dot-line4" cx="656.8" cy="685.38" r=".945" data-svg-origin="655.85498046875 684.4349975585938" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse364" class="dot-line4" cx="663.56" cy="681.39" r=".946" data-svg-origin="662.614013671875 680.4440307617188" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse366" class="dot-line4" cx="672.12" cy="676.54" r=".946" data-svg-origin="671.1740112304688 675.593994140625" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse368" class="dot-line4" cx="681.44" cy="671.09" r=".946" data-svg-origin="680.4940185546875 670.1439819335938" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse370" class="dot-line4" cx="687.92" cy="667.38" r=".946" data-svg-origin="686.9740600585938 666.4340209960938" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse372" class="dot-line4" cx="695.06" cy="663.31" r=".946" data-svg-origin="694.114013671875 662.364013671875" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse374" class="dot-line4" cx="701.99" cy="659.24" r=".946" data-svg-origin="701.0440063476562 658.2940063476562" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse376" class="dot-line4" cx="710.81" cy="654.18" r=".946" data-svg-origin="709.864013671875 653.2340087890625" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse378" class="dot-line4" cx="719.24" cy="649.34" r=".946" data-svg-origin="718.2940063476562 648.3939819335938" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse380" class="dot-line4" cx="726.75" cy="645.04" r=".946" data-svg-origin="725.8040161132812 644.093994140625" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse382" class="dot-line4" cx="733.92" cy="640.78" r=".946" data-svg-origin="732.9740600585938 639.833984375" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse384" class="dot-line4" cx="741.88" cy="636.21" r=".946" data-svg-origin="740.9340209960938 635.2640380859375" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse386" class="dot-line4" cx="749.96" cy="631.52" r=".946" data-svg-origin="749.0140380859375 630.5740356445312" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse388" class="dot-line4" cx="757.44" cy="627.25" r=".946" data-svg-origin="756.4940185546875 626.3040161132812" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse390" class="dot-line4" cx="766.03" cy="622.3" r=".946" data-svg-origin="765.083984375 621.35400390625" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse392" class="dot-line4" cx="773.44" cy="618.12" r=".946" data-svg-origin="772.4940185546875 617.1740112304688" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse394" class="dot-line4" cx="781.6" cy="613.23" r=".946" data-svg-origin="780.6539916992188 612.2839965820312" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse396" class="dot-line4" cx="788.53" cy="609.37" r=".946" data-svg-origin="787.583984375 608.4240112304688" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse398" class="dot-line4" cx="796.79" cy="604.53" r=".945" data-svg-origin="795.844970703125 603.5849609375" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse400" class="dot-line4" cx="804.67" cy="600.08" r=".946" data-svg-origin="803.7240600585938 599.1339721679688" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse402" class="dot-line4" cx="812.1" cy="595.7" r=".946" data-svg-origin="811.1539916992188 594.7540283203125" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse404" class="dot-line4" cx="819.73" cy="591.29" r=".946" data-svg-origin="818.7839965820312 590.343994140625" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse406" class="dot-line4" cx="826.46" cy="587.49" r=".945" data-svg-origin="825.5149536132812 586.5449829101562" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse408" class="dot-line4" cx="834.03" cy="583.08" r=".946" data-svg-origin="833.0839960937499 582.1339930419922" transform="matrix(2,0,0,2,-833.0839960937499,-582.1339930419922)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse410" class="dot-line4" cx="845.62" cy="576.22" r=".946" data-svg-origin="844.6740028076172 575.2740119628907" transform="matrix(2,0,0,2,-844.6740028076172,-575.2740119628907)" style="fill: rgb(255, 153, 0);"></circle>
+            </g>
+            <g id="dot_line_5" transform="translate(91.244 -338.96)" style="fill:#1d2028">
+              <circle id="ellipse413" class="dot-line5" cx="231.03" cy="931.71" r=".946" data-svg-origin="230.08399981689453 930.7639885253907" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse415" class="dot-line5" cx="221.75" cy="936.57" r=".946" data-svg-origin="220.80400042724608 935.62401171875" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse417" class="dot-line5" cx="215.13" cy="940.29" r=".946" data-svg-origin="214.18400286865233 939.3439375878905" transform="matrix(1,0,0,1,0,0.00003)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse419" class="dot-line5" cx="207.35" cy="944.84" r=".946" data-svg-origin="206.4040034790039 943.8939614843752" transform="matrix(1,0,0,1,0,0.00002)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse421" class="dot-line5" cx="199.48" cy="949.35" r=".945" data-svg-origin="198.53500183105467 948.4049841308594" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse423" class="dot-line5" cx="191.13" cy="954.33" r=".946" data-svg-origin="190.18400286865233 953.3839860839844" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse425" class="dot-line5" cx="181.95" cy="959.42" r=".946" data-svg-origin="181.0039989013672 958.474030029297" transform="matrix(1,0,0,1,0,0.000030029296908651304)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse427" class="dot-line5" cx="168.98" cy="966.89" r=".946" data-svg-origin="168.0340118408203 965.9440307617188" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse429" class="dot-line5" cx="156.9" cy="973.94" r=".946" data-svg-origin="155.95399475097656 972.9940795898438" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse431" class="dot-line5" cx="147.86" cy="979.11" r=".945" data-svg-origin="146.9149932861328 978.1649780273438" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse433" class="dot-line5" cx="136.78" cy="985.51" r=".945" data-svg-origin="135.83499145507812 984.56494140625" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse435" class="dot-line5" cx="125.66" cy="992.03" r=".946" data-svg-origin="124.71399688720703 991.083984375" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse437" class="dot-line5" cx="115.04" cy="998.19" r=".946" data-svg-origin="114.0951302789071 997.25461840967" transform="matrix(1,0,0,1,-0.0001854253880253509,-0.0017316343514721666)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse439" class="dot-line5" cx="105.05" cy="1004.1" r=".946" data-svg-origin="104.10400048828126 1003.1504989624023" transform="matrix(1,0,0,1,0,0.0004989624022755379)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse441" class="dot-line5" cx="97.141" cy="1008.5" r=".946" data-svg-origin="96.19499996185303 1007.5505020141601" transform="matrix(1,0,0,1,0,0.0005020141601335126)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse443" class="dot-line5" cx="86.602" cy="1014.8" r=".946" data-svg-origin="85.65600073242189 1013.8505004882813" transform="matrix(1,0,0,1,0,0.0005004882813182121)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse445" class="dot-line5" cx="76.595" cy="1020.3" r=".946" data-svg-origin="75.64900207519531 1019.35400390625" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse447" class="dot-line5" cx="66.722" cy="1026" r=".946" data-svg-origin="65.7760009765625 1025.053955078125" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse449" class="dot-line5" cx="56.849" cy="1031.7" r=".946" data-svg-origin="55.90299987792969 1030.75390625" transform="matrix(2,0,0,2,-55.90299987792969,-1030.75390625)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse451" class="dot-line5" cx="46.976" cy="1037.3" r=".945" data-svg-origin="46.031002044677734 1036.3551025390625" transform="matrix(2,0,0,2,-46.031002044677734,-1036.3551025390625)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse453" class="dot-line5" cx="37.103" cy="1043" r=".946" data-svg-origin="36.15700004673004 1042.0501235961915" transform="matrix(2,0,0,2,-36.15700004673004,-1042.05)" style="fill: #ff9900;"></circle>
+              <circle id="ellipse455" class="dot-line5" cx="27.23" cy="1048.6" r=".946" data-svg-origin="26.284000012397765 1047.650122833252" transform="matrix(2,0,0,2,-26.284000012397765,-1047.65)" style="fill: #ff9900;"></circle>
+              <circle id="ellipse457" class="dot-line5" cx="17.357" cy="1054.3" r=".945" data-svg-origin="16.412000020503996 1053.3598469543458" transform="matrix(2,0,0,2,-16.412000020503996,-1053.36)" style="fill: #ff9900;"></circle>
+              <circle id="ellipse459" class="dot-line5" cx="7.484" cy="1060" r=".946" data-svg-origin="6.537999629974365 1059.053955078125" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+            </g>
+            <g id="dot_line_6" transform="translate(91.244 -338.96)" style="fill:#1d2028">
+              <circle id="ellipse462" class="dot-line6" cx="3.68" cy="957.93" r=".946" data-svg-origin="2.733999729156494 956.9840087890625" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse464" class="dot-line6" cx="11.679" cy="953.24" r=".946" data-svg-origin="10.732999801635742 952.2940673828125" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse466" class="dot-line6" cx="21.014" cy="947.62" r=".946" data-svg-origin="20.06800079345703 946.6740112304688" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse468" class="dot-line6" cx="26.365" cy="944.95" r=".945" data-svg-origin="25.420000076293945 944.0050048828125" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse470" class="dot-line6" cx="34.4" cy="940.25" r=".946" data-svg-origin="33.454002380371094 939.3040161132812" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse472" class="dot-line6" cx="42.692" cy="935.33" r=".945" data-svg-origin="41.74700164794922 934.3849487304688" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse474" class="dot-line6" cx="51.422" cy="930.33" r=".946" data-svg-origin="50.47599792480469 929.3839721679688" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse476" class="dot-line6" cx="59.844" cy="925.44" r=".946" data-svg-origin="58.89800262451172 924.4940795898438" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse478" class="dot-line6" cx="67.257" cy="921.28" r=".946" data-svg-origin="66.31100463867188 920.333984375" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse480" class="dot-line6" cx="75.977" cy="916.27" r=".946" data-svg-origin="75.031005859375 915.3240356445312" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse482" class="dot-line6" cx="84.263" cy="911.37" r=".946" data-svg-origin="83.31700134277344 910.4240112304688" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse484" class="dot-line6" cx="90.563" cy="907.75" r=".946" data-svg-origin="89.61700439453125 906.8040161132812" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse486" class="dot-line6" cx="98.934" cy="902.92" r=".945" data-svg-origin="97.98900604248047 901.9750366210938" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse488" class="dot-line6" cx="105.95" cy="898.88" r=".946" data-svg-origin="105.00399780273438 897.9340209960938" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse490" class="dot-line6" cx="112.7" cy="894.89" r=".945" data-svg-origin="111.75499725341797 893.9450073242188" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse492" class="dot-line6" cx="121.26" cy="890.04" r=".946" data-svg-origin="120.31399536132812 889.0940551757812" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse494" class="dot-line6" cx="130.59" cy="884.59" r=".946" data-svg-origin="129.64399982452392 883.6440026855469" transform="matrix(2,0,0,2,-129.64399982452392,-883.6440026855469)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse496" class="dot-line6" cx="137.07" cy="880.88" r=".946" data-svg-origin="136.1239995574951 879.9340013122558" transform="matrix(2,0,0,2,-136.1239995574951,-879.9340013122558)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse498" class="dot-line6" cx="144.18" cy="876.78" r=".945" data-svg-origin="143.23500003814698 875.8349975585938" transform="matrix(2,0,0,2,-143.23500003814698,-875.8349975585938)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse500" class="dot-line6" cx="151.13" cy="872.74" r=".946" data-svg-origin="150.18400035858156 871.7940042114258" transform="matrix(2,0,0,2,-150.18400035858156,-871.7940042114258)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse502" class="dot-line6" cx="159.95" cy="867.68" r=".946" data-svg-origin="159.00399780273438 866.7340087890625" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse504" class="dot-line6" cx="168.39" cy="862.84" r=".946" data-svg-origin="167.44400003051754 861.8940053710937" transform="matrix(2,0,0,2,-167.44400003051754,-861.8940053710937)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse506" class="dot-line6" cx="175.89" cy="858.54" r=".946" data-svg-origin="174.94400003051754 857.5940068969727" transform="matrix(2,0,0,2,-174.94400003051754,-857.5940068969727)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse508" class="dot-line6" cx="183.06" cy="854.28" r=".946" data-svg-origin="182.11399980163577 853.333998046875" transform="matrix(2,0,0,2,-182.11399980163577,-853.333998046875)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse510" class="dot-line6" cx="191.02" cy="849.71" r=".946" data-svg-origin="190.0739987335205 848.7639971313477" transform="matrix(2,0,0,2,-190.0739987335205,-848.7639971313477)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse512" class="dot-line6" cx="199.1" cy="845.01" r=".946" data-svg-origin="198.1540069580078 844.06396484375" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse514" class="dot-line6" cx="206.59" cy="840.75" r=".946" data-svg-origin="205.6439971923828 839.8040161132812" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse516" class="dot-line6" cx="215.18" cy="835.8" r=".946" data-svg-origin="214.2340087890625 834.85400390625" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse518" class="dot-line6" cx="222.58" cy="831.62" r=".945" data-svg-origin="221.63499450683594 830.6749877929688" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse520" class="dot-line6" cx="230.75" cy="826.73" r=".946" data-svg-origin="229.80400042724608 825.7839982910157" transform="matrix(1,0,0,1,0,0)" style="fill: #ff9900;"></circle>
+              <circle id="ellipse522" class="dot-line6" cx="237.67" cy="822.86" r=".946" data-svg-origin="236.72399975585938 821.914000366211" transform="matrix(2,0,0,2,-236.72399975585938,-821.914000366211)" style="fill: #ff9900;"></circle>
+              <circle id="ellipse524" class="dot-line6" cx="245.93" cy="818.03" r=".945" data-svg-origin="244.9850001525879 817.084990234375" transform="matrix(2,0,0,2,-244.9850001525879,-817.084990234375)" style="fill: #ff9900;"></circle>
+              <circle id="ellipse526" class="dot-line6" cx="253.81" cy="813.58" r=".946" data-svg-origin="252.86400341796877 812.6339930419922" transform="matrix(2,0,0,2,-252.86400341796877,-812.6339930419922)" style="fill: #ff9900;"></circle>
+              <circle id="ellipse528" class="dot-line6" cx="261.24" cy="809.2" r=".946" data-svg-origin="260.29398791503905 808.2540141601562" transform="matrix(2,0,0,2,-260.29398791503905,-808.2540141601562)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse530" class="dot-line6" cx="268.87" cy="804.79" r=".946" data-svg-origin="267.9239807128906 803.843994140625" transform="matrix(2,0,0,2,-267.9239807128906,-803.843994140625)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse532" class="dot-line6" cx="275.61" cy="800.99" r=".946" data-svg-origin="274.66400146484375 800.0440063476562" transform="matrix(2,0,0,2,-274.66400146484375,-800.0440063476562)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse534" class="dot-line6" cx="283.17" cy="796.58" r=".946" data-svg-origin="282.2239685058594 795.6339721679688" transform="matrix(2,0,0,2,-282.2239685058594,-795.6339721679688)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse536" class="dot-line6" cx="294.77" cy="789.72" r=".946" data-svg-origin="293.823974609375 788.7740478515625" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+            </g>
+            <g id="dot_line_7" transform="translate(91.244 -338.96)" style="fill:#1d2028">
+              <circle id="ellipse539" class="dot-line7" cx="212.27" cy="907.03" r=".946" data-svg-origin="211.32398986816406 906.083984375" transform="matrix(2,0,0,2,-211.32398986816406,-906.083984375)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse541" class="dot-line7" cx="219.92" cy="911.32" r=".946" data-svg-origin="218.9739990234375 910.3740234375" transform="matrix(2,0,0,2,-218.9739990234375,-910.3740234375)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse543" class="dot-line7" cx="204.48" cy="902.57" r=".946" data-svg-origin="203.5340118408203 901.6240234375" transform="matrix(2,0,0,2,-203.5340118408203,-901.6240234375)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse545" class="dot-line7" cx="196.43" cy="897.84" r=".946" data-svg-origin="195.48400439453127 896.894021484375" transform="matrix(2,0,0,2,-195.48400439453127,-896.894)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse547" class="dot-line7" cx="188.37" cy="893.1" r=".946" data-svg-origin="187.42399798583983 892.1539958496094" transform="matrix(2,0,0,2,-187.42399798583983,-892.1539958496094)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse549" class="dot-line7" cx="180.31" cy="888.36" r=".946" data-svg-origin="179.36399920654299 887.4140007324219" transform="matrix(2,0,0,2,-179.36399920654299,-887.4140007324219)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse551" class="dot-line7" cx="172.25" cy="883.62" r=".945" data-svg-origin="171.30499633789063 882.6749938964844" transform="matrix(2,0,0,2,-171.30499633789063,-882.6749938964844)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse553" class="dot-line7" cx="164.19" cy="878.89" r=".946" data-svg-origin="163.24400010299684 877.9440009613037" transform="matrix(1,0,0,1,0,0)" style="fill: #ff9900;"></circle>
+              <circle id="ellipse555" class="dot-line7" cx="140.02" cy="864.68" r=".946" data-svg-origin="139.07399968338012 863.7340002746582" transform="matrix(1,0,0,1,0,0)" style="fill: #ff9900;"></circle>
+              <circle id="ellipse557" class="dot-line7" cx="131.96" cy="859.94" r=".946" data-svg-origin="131.01399975967408 858.9940024871826" transform="matrix(1,0,0,1,0,0)" style="fill: #ff9900;"></circle>
+              <circle id="ellipse559" class="dot-line7" cx="123.9" cy="855.21" r=".945" data-svg-origin="122.95500005722045 854.2649985504149" transform="matrix(1,0,0,1,0,0)" style="fill: #ff9900;"></circle>
+              <circle id="ellipse561" class="dot-line7" cx="115.84" cy="850.47" r=".946" data-svg-origin="114.89400015068054 849.5240014953613" transform="matrix(1,0,0,1,0,0)" style="fill: #ff9900;"></circle>
+              <circle id="ellipse563" class="dot-line7" cx="107.78" cy="845.73" r=".946" data-svg-origin="106.8340002269745 844.7839998931884" transform="matrix(1,0,0,1,0,0)" style="fill: #ff9900;"></circle>
+              <circle id="ellipse565" class="dot-line7" cx="99.723" cy="841" r=".945" data-svg-origin="98.77799999618532 840.0549997711182" transform="matrix(1,0,0,1,0,0)" style="fill: #ff9900;"></circle>
+              <circle id="ellipse567" class="dot-line7" cx="91.664" cy="836.26" r=".946" data-svg-origin="90.71800007247924 835.3139989013671" transform="matrix(1,0,0,1,0,0)" style="fill: #ff9900;"></circle>
+              <circle id="ellipse569" class="dot-line7" cx="83.605" cy="831.52" r=".946" data-svg-origin="82.65899989318848 830.5740011138917" transform="matrix(1,0,0,1,0,0)" style="fill: #ff9900;"></circle>
+              <circle id="ellipse571" class="dot-line7" cx="75.547" cy="826.78" r=".946" data-svg-origin="74.60099993515014 825.8339995117187" transform="matrix(1,0,0,1,0,0)" style="fill: #ff9900;"></circle>
+              <circle id="ellipse573" class="dot-line7" cx="67.488" cy="822.05" r=".946" data-svg-origin="66.54199999427796 821.1040001220704" transform="matrix(1,0,0,1,0,0)" style="fill: #ff9900;"></circle>
+              <circle id="ellipse575" class="dot-line7" cx="59.429" cy="817.31" r=".945" data-svg-origin="58.48399983406067 816.3649993896485" transform="matrix(1,0,0,1,0,0)" style="fill: #ff9900;"></circle>
+              <circle id="ellipse577" class="dot-line7" cx="51.371" cy="812.58" r=".945" data-svg-origin="50.426000156402594 811.6349967956543" transform="matrix(1,0,0,1,0,0)" style="fill: #ff9900;"></circle>
+              <circle id="ellipse579" class="dot-line7" cx="43.313" cy="807.84" r=".945" data-svg-origin="42.36800000190735 806.8949974060058" transform="matrix(1,0,0,1,0,0)" style="fill: #ff9900;"></circle>
+              <circle id="ellipse581" class="dot-line7" cx="35.254" cy="803.1" r=".945" data-svg-origin="34.30900012016296 802.1549980163575" transform="matrix(1,0,0,1,0,0)" style="fill: #ff9900;"></circle>
+              <circle id="ellipse583" class="dot-line7" cx="27.195" cy="798.36" r=".945" data-svg-origin="26.25000023841858 797.4149972534179" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse585" class="dot-line7" cx="19.137" cy="793.63" r=".945" data-svg-origin="18.1919999294281 792.6849996948242" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse587" class="dot-line7" cx="11.078" cy="788.89" r=".946" data-svg-origin="10.131999996185304 787.9440038452149" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse589" class="dot-line7" cx="3.02" cy="784.16" r=".946" data-svg-origin="2.073999985218048 783.214006286621" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+            </g>
+            <g id="dotline_8" transform="translate(91.244 -338.96)" style="fill:#1d2028">
+              <circle id="ellipse592" class="dot-line8" cx="1132" cy="726.68" r=".946" data-svg-origin="1131.053955078125 725.7340087890625" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse594" class="dot-line8" cx="1139.6" cy="730.97" r=".945" data-svg-origin="1138.655029296875 730.0250244140625" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse596" class="dot-line8" cx="1124.2" cy="722.22" r=".946" data-svg-origin="1123.25390625 721.2740478515625" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse598" class="dot-line8" cx="1116.1" cy="717.48" r=".946" data-svg-origin="1115.1539306640625 716.5339965820312" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse600" class="dot-line8" cx="1108.1" cy="712.75" r=".946" data-svg-origin="1107.1539306640625 711.8040161132812" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse602" class="dot-line8" cx="1100" cy="708.01" r=".946" data-svg-origin="1099.053955078125 707.0640258789062" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse604" class="dot-line8" cx="1091.9" cy="703.27" r=".945" data-svg-origin="1090.955078125 702.3250122070312" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse606" class="dot-line8" cx="1083.9" cy="698.54" r=".946" data-svg-origin="1082.9539794921875 697.593994140625" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse608" class="dot-line8" cx="1075.8" cy="693.8" r=".946" data-svg-origin="1074.85400390625 692.85400390625" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse610" class="dot-line8" cx="1067.8" cy="689.06" r=".946" data-svg-origin="1066.85400390625 688.114013671875" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse612" class="dot-line8" cx="1059.7" cy="684.33" r=".946" data-svg-origin="1058.75390625 683.3839721679688" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse614" class="dot-line8" cx="1051.6" cy="679.59" r=".946" data-svg-origin="1050.6539306640625 678.6439819335938" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse616" class="dot-line8" cx="1043.6" cy="674.85" r=".946" data-svg-origin="1042.6539306640625 673.9039916992188" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse618" class="dot-line8" cx="1035.5" cy="670.12" r=".945" data-svg-origin="1034.5550537109375 669.1749877929688" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse620" class="dot-line8" cx="1027.5" cy="665.38" r=".946" data-svg-origin="1026.553955078125 664.4340209960938" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse622" class="dot-line8" cx="1019.4" cy="660.64" r=".946" data-svg-origin="1018.4540405273438 659.6940307617188" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse624" class="dot-line8" cx="1011.4" cy="655.91" r=".946" data-svg-origin="1010.4540405273438 654.9640502929688" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse626" class="dot-line8" cx="1003.3" cy="651.17" r=".946" data-svg-origin="1002.35400390625 650.2240600585938" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse628" class="dot-line8" cx="995.24" cy="646.43" r=".946" data-svg-origin="994.2940673828125 645.4840087890625" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse630" class="dot-line8" cx="987.18" cy="641.7" r=".946" data-svg-origin="986.2340087890625 640.7540283203125" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse632" class="dot-line8" cx="979.12" cy="636.96" r=".945" data-svg-origin="978.1749969482421 636.0150036621094" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse634" class="dot-line8" cx="971.06" cy="632.22" r=".946" data-svg-origin="970.1139881591797 631.2740119628907" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse636" class="dot-line8" cx="963" cy="627.49" r=".946" data-svg-origin="962.0540040283204 626.544001586914" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse638" class="dot-line8" cx="954.94" cy="622.75" r=".946" data-svg-origin="953.9940198974609 621.8040040283204" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse640" class="dot-line8" cx="946.89" cy="618.01" r=".946" data-svg-origin="945.9440307617188 617.0640258789062" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse642" class="dot-line8" cx="938.83" cy="613.28" r=".946" data-svg-origin="937.8839721679688 612.333984375" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse644" class="dot-line8" cx="930.77" cy="608.54" r=".946" data-svg-origin="929.8240356445312 607.593994140625" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse646" class="dot-line8" cx="922.71" cy="603.8" r=".946" data-svg-origin="921.7639770507812 602.85400390625" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse648" class="dot-line8" cx="914.65" cy="599.07" r=".946" data-svg-origin="913.7040405273438 598.1240234375" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse650" class="dot-line8" cx="906.59" cy="594.33" r=".946" data-svg-origin="905.64404296875 593.3839721679688" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse652" class="dot-line8" cx="898.53" cy="589.59" r=".946" data-svg-origin="897.583984375 588.6439819335938" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse654" class="dot-line8" cx="890.47" cy="584.86" r=".946" data-svg-origin="889.5240478515625 583.9140014648438" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse656" class="dot-line8" cx="882.42" cy="580.12" r=".946" data-svg-origin="881.4740600585938 579.1740112304688" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse658" class="dot-line8" cx="874.36" cy="575.38" r=".946" data-svg-origin="873.4140007324219 574.4340104980469" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse660" class="dot-line8" cx="866.3" cy="570.65" r=".946" data-svg-origin="865.354001953125 569.7040002636719" transform="matrix(1,0,0,1,0,0.00002)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse662" class="dot-line8" cx="858.24" cy="565.91" r=".946" data-svg-origin="857.2940036914061 564.9639951464843" transform="matrix(1,0,0,1,0.00003,0.00003)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse664" class="dot-line8" cx="853.07" cy="562.96" r=".946" data-svg-origin="852.12401171875 562.0140190429688" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse666" class="dot-line8" cx="845.63" cy="558.82" r=".945" data-svg-origin="844.6849975585938 557.875" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse668" class="dot-line8" cx="840.55" cy="555.82" r=".946" data-svg-origin="839.60400390625 554.8740234375" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse670" class="dot-line8" cx="835.48" cy="552.82" r=".946" data-svg-origin="834.5339965820312 551.8740234375" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse672" class="dot-line8" cx="830.4" cy="549.82" r=".946" data-svg-origin="829.4540405273438 548.8740234375" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse674" class="dot-line8" cx="825.33" cy="546.82" r=".946" data-svg-origin="824.3839721679688 545.8740234375" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse676" class="dot-line8" cx="820.25" cy="543.83" r=".946" data-svg-origin="819.3040161132812 542.8839721679688" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse678" class="dot-line8" cx="815.18" cy="540.83" r=".946" data-svg-origin="814.2340087890625 539.8839721679688" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse680" class="dot-line8" cx="810.1" cy="537.83" r=".946" data-svg-origin="809.1539916992188 536.8839721679688" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse682" class="dot-line8" cx="805.03" cy="534.83" r=".945" data-svg-origin="804.0849609375 533.8849487304688" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse684" class="dot-line8" cx="799.95" cy="531.83" r=".946" data-svg-origin="799.0040283203125 530.8839721679688" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse686" class="dot-line8" cx="794.88" cy="528.83" r=".946" data-svg-origin="793.9340209960938 527.8839721679688" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse688" class="dot-line8" cx="789.8" cy="525.83" r=".946" data-svg-origin="788.85400390625 524.8839721679688" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse690" class="dot-line8" cx="784.73" cy="522.83" r=".946" data-svg-origin="783.7839965820312 521.8839721679688" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse692" class="dot-line8" cx="779.65" cy="519.83" r=".946" data-svg-origin="778.7040405273438 518.8839721679688" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse694" class="dot-line8" cx="774.58" cy="516.84" r=".946" data-svg-origin="773.6339721679688 515.8939819335938" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse696" class="dot-line8" cx="769.5" cy="513.84" r=".946" data-svg-origin="768.5540161132812 512.8939819335938" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse698" class="dot-line8" cx="764.42" cy="510.84" r=".946" data-svg-origin="763.4740600585938 509.89398193359375" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse700" class="dot-line8" cx="759.35" cy="507.84" r=".945" data-svg-origin="758.4049682617188 506.8949890136719" transform="matrix(2,0,0,2,-758.4049682617188,-506.8949890136719)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse702" class="dot-line8" cx="754.27" cy="504.84" r=".945" data-svg-origin="753.3250122070312 503.8949890136719" transform="matrix(2,0,0,2,-753.3250122070312,-503.8949890136719)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse704" class="dot-line8" cx="749.2" cy="501.84" r=".945" data-svg-origin="748.2550048828125 500.8949890136719" transform="matrix(2,0,0,2,-748.2550048828125,-500.8949890136719)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse706" class="dot-line8" cx="744.12" cy="498.84" r=".945" data-svg-origin="743.1749877929688 497.8949890136719" transform="matrix(2,0,0,2,-743.1749877929688,-497.8949890136719)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse708" class="dot-line8" cx="739.05" cy="495.84" r=".946" data-svg-origin="738.10400390625 494.89398193359375" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse710" class="dot-line8" cx="733.97" cy="492.84" r=".946" data-svg-origin="733.0240029907227 491.8939988708496" transform="matrix(1,0,0,1,0,0)" style="fill: #ff9900;"></circle>
+              <circle id="ellipse712" class="dot-line8" cx="728.9" cy="489.85" r=".946" data-svg-origin="727.954002532959 488.90399948120114" transform="matrix(1,0,0,1,0,0)" style="fill: #ff9900;"></circle>
+              <circle id="ellipse714" class="dot-line8" cx="723.83" cy="486.85" r=".946" data-svg-origin="722.8839982604981 485.90399948120114" transform="matrix(1,0,0,1,0,0)" style="fill: #ff9900;"></circle>
+              <circle id="ellipse716" class="dot-line8" cx="718.75" cy="483.85" r=".945" data-svg-origin="717.8049995422364 482.90499992370604" transform="matrix(1,0,0,1,0,0)" style="fill: #ff9900;"></circle>
+              <circle id="ellipse718" class="dot-line8" cx="713.67" cy="480.85" r=".946" data-svg-origin="712.7240600585938 479.90399169921875" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse720" class="dot-line8" cx="708.6" cy="477.85" r=".946" data-svg-origin="707.6539916992188 476.90399169921875" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse722" class="dot-line8" cx="703.53" cy="474.85" r=".946" data-svg-origin="702.583984375 473.90399169921875" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse724" class="dot-line8" cx="698.45" cy="471.85" r=".946" data-svg-origin="697.5040283203125 470.90399169921875" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse726" class="dot-line8" cx="693.37" cy="468.86" r=".946" data-svg-origin="692.4240112304688 467.91400146484375" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse728" class="dot-line8" cx="688.3" cy="465.86" r=".946" data-svg-origin="687.35400390625 464.91400146484375" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse730" class="dot-line8" cx="683.22" cy="462.86" r=".946" data-svg-origin="682.2740478515625 461.91400146484375" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse732" class="dot-line8" cx="678.15" cy="459.86" r=".946" data-svg-origin="677.2040405273438 458.91400146484375" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse734" class="dot-line8" cx="673.07" cy="456.86" r=".946" data-svg-origin="672.1240234375 455.91400146484375" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse736" class="dot-line8" cx="668" cy="453.86" r=".946" data-svg-origin="667.0540161132812 452.91400146484375" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse738" class="dot-line8" cx="662.92" cy="450.86" r=".945" data-svg-origin="661.9750366210938 449.9150085449219" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse740" class="dot-line8" cx="657.85" cy="447.86" r=".946" data-svg-origin="656.9039916992188 446.91400146484375" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse742" class="dot-line8" cx="652.77" cy="444.86" r=".946" data-svg-origin="651.8240356445312 443.91400146484375" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse744" class="dot-line8" cx="647.7" cy="441.86" r=".946" data-svg-origin="646.7540141601562 440.91400073242187" transform="matrix(2,0,0,2,-646.7540141601562,-440.91400073242187)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse746" class="dot-line8" cx="642.62" cy="438.87" r=".946" data-svg-origin="641.6740056152344 437.92400561523436" transform="matrix(2,0,0,2,-641.6740056152344,-437.92400561523436)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse748" class="dot-line8" cx="637.55" cy="435.87" r=".946" data-svg-origin="636.604001953125 434.92400561523436" transform="matrix(2,0,0,2,-636.604001953125,-434.92400561523436)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse750" class="dot-line8" cx="632.47" cy="432.87" r=".945" data-svg-origin="631.5250122070313 431.9250091552734" transform="matrix(2,0,0,2,-631.5250122070313,-431.9250091552734)" style="fill: rgb(255, 153, 0);"></circle>
+              <circle id="ellipse752" class="dot-line8" cx="627.4" cy="429.87" r=".946" data-svg-origin="626.4540405273438 428.92401123046875" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse754" class="dot-line8" cx="622.32" cy="426.87" r=".946" data-svg-origin="621.3740234375 425.92401123046875" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse756" class="dot-line8" cx="617.25" cy="423.87" r=".946" data-svg-origin="616.3040161132812 422.92401123046875" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse758" class="dot-line8" cx="612.17" cy="420.87" r=".946" data-svg-origin="611.2240600585938 419.92401123046875" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse760" class="dot-line8" cx="607.1" cy="417.87" r=".946" data-svg-origin="606.1539916992188 416.92401123046875" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse762" class="dot-line8" cx="602.02" cy="414.88" r=".946" data-svg-origin="601.0740356445312 413.9339599609375" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse764" class="dot-line8" cx="596.95" cy="411.88" r=".946" data-svg-origin="596.0040283203125 410.9339599609375" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse766" class="dot-line8" cx="591.87" cy="408.88" r=".946" data-svg-origin="590.9240112304688 407.9339904785156" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse768" class="dot-line8" cx="586.8" cy="405.88" r=".946" data-svg-origin="585.85400390625 404.9339904785156" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse770" class="dot-line8" cx="581.72" cy="402.88" r=".946" data-svg-origin="580.7740478515625 401.9339904785156" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse772" class="dot-line8" cx="576.65" cy="399.88" r=".945" data-svg-origin="575.7050170898438 398.93499755859375" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse774" class="dot-line8" cx="571.57" cy="396.88" r=".945" data-svg-origin="570.625 395.93499755859375" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse776" class="dot-line8" cx="566.5" cy="393.88" r=".945" data-svg-origin="565.5549926757812 392.93499755859375" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse778" class="dot-line8" cx="561.42" cy="390.88" r=".946" data-svg-origin="560.4740600585938 389.9339904785156" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse780" class="dot-line8" cx="556.35" cy="387.88" r=".946" data-svg-origin="555.4039916992188 386.9339904785156" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse782" class="dot-line8" cx="551.27" cy="384.89" r=".946" data-svg-origin="550.3240356445312 383.9439697265625" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse784" class="dot-line8" cx="546.2" cy="381.89" r=".946" data-svg-origin="545.2540283203125 380.9439697265625" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse786" class="dot-line8" cx="541.12" cy="378.89" r=".945" data-svg-origin="540.1749877929688 377.9449768066406" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse788" class="dot-line8" cx="536.05" cy="375.89" r=".946" data-svg-origin="535.10400390625 374.9439697265625" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse790" class="dot-line8" cx="530.97" cy="372.89" r=".946" data-svg-origin="530.0240478515625 371.9439697265625" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse792" class="dot-line8" cx="525.9" cy="369.89" r=".945" data-svg-origin="524.9550170898438 368.9449768066406" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse794" class="dot-line8" cx="520.82" cy="366.89" r=".946" data-svg-origin="519.8740234375 365.9439697265625" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse796" class="dot-line8" cx="515.75" cy="363.89" r=".946" data-svg-origin="514.8040161132812 362.9439697265625" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse798" class="dot-line8" cx="510.67" cy="360.89" r=".946" data-svg-origin="509.7239990234375 359.9439697265625" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse800" class="dot-line8" cx="505.6" cy="357.9" r=".946" data-svg-origin="504.65399169921875 356.9539794921875" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse802" class="dot-line8" cx="500.52" cy="354.9" r=".946" data-svg-origin="499.5740051269531 353.9539794921875" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse804" class="dot-line8" cx="495.45" cy="351.9" r=".946" data-svg-origin="494.5039978027344 350.9539794921875" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse806" class="dot-line8" cx="490.37" cy="348.9" r=".946" data-svg-origin="489.42401123046875 347.9539794921875" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse808" class="dot-line8" cx="485.3" cy="345.9" r=".945" data-svg-origin="484.35498046875 344.9549865722656" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse810" class="dot-line8" cx="480.22" cy="342.9" r=".946" data-svg-origin="479.2740173339844 341.9539794921875" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+              <circle id="ellipse812" class="dot-line8" cx="475.15" cy="339.9" r=".946" data-svg-origin="474.2039794921875 338.9539794921875" transform="matrix(1,0,0,1,0,0)" style="fill: rgb(29, 32, 40);"></circle>
+            </g>
+            <g id="Capa_2" transform="translate(91.244 -338.96)">
+              <path id="path815" d="m938.36 660.52 61.363-35.428 61.363 35.428-61.363 35.429z" style="fill:#ff9900"></path>
+              <path id="path817" d="m999.73 625.94 59.888 34.576-59.888 34.576-59.887-34.576 59.887-34.576m0-1.704-62.839 36.28 62.839 36.28 62.84-36.28zm-919.76 249.01 61.363-35.428 61.363 35.428-61.363 35.429z" style="fill:#181922"></path>
+              <path id="path819" d="m141.34 838.68 59.888 34.575-59.888 34.576-59.887-34.576 59.887-34.575m0-1.706-62.839 36.28 62.839 36.28 62.84-36.28z" style="fill:#fff"></path>
+              <path id="path821" d="m1032 615.41 60.929-35.169 60.929 35.169-60.929 35.562z" style="fill:#181922"></path>
+              <path id="path823" d="m1092.9 580.66 60.193 34.744-60.193 35.134-60.193-35.133 60.193-34.745m0-0.853-61.664 35.594 61.664 35.991 61.663-35.991zm25.117 178.76 61.363-35.428 61.363 35.428-61.363 35.429z" style="fill:#fff"></path>
+              <path id="path825" d="m1179.4 724 59.887 34.576-59.887 34.576-59.887-34.576 59.887-34.576m0-1.705-62.84 36.28 62.84 36.28 62.84-36.28z" style="fill:#ff9900"></path>
+              <path id="path827" d="m248.38 774.64 61.363-35.428 61.363 35.428-61.363 35.429z" style="fill:#181922"></path>
+              <path id="path829" d="m309.75 740.06 59.887 34.576-59.887 34.576-59.888-34.576 59.888-34.576m0-1.705-62.84 36.28 62.84 36.28 62.84-36.28z" style="fill:#ff9900"></path>
+              <g id="g835" style="opacity:.8">
+                <path id="path831" d="m141.7 901.63 62.102-35.643v7.529l-62.102 35.854z" style="fill:#181922"></path>
+                <path id="path833" d="m203.44 866.62v6.679l-61.363 35.428v-6.888l61.363-35.219m0.738-1.276-62.84 36.066v8.594l62.84-36.28z" style="fill:#202333"></path>
+              </g>
+              <g id="g841" style="opacity:.8">
+                <path id="path837" d="m78.865 865.48 62.102-35.644v7.529l-62.102 35.854z" style="fill:#181922"></path>
+                <path id="path839" d="m140.6 830.48v6.679l-61.363 35.428v-6.888l61.363-35.219m0.738-1.275-62.839 36.066v8.595l62.839-36.281z" style="fill:#202333"></path>
+              </g>
+              <g id="g847" style="opacity:.8">
+                <path id="path843" d="m78.865 873.52v-7.529l62.102 35.643v7.741z" style="fill:#181922"></path>
+                <path id="path845" d="m79.234 866.62 61.363 35.219v6.888l-61.363-35.428v-6.679m-0.737-1.276v8.38l62.839 36.28v-8.594z" style="fill:#202333"></path>
+              </g>
+              <g id="g853" style="opacity:.8">
+                <path id="path849" d="m141.7 837.37v-7.529l62.102 35.644v7.74z" style="fill:#181922"></path>
+                <path id="path851" d="m142.07 830.48 61.363 35.219v6.888l-61.363-35.428v-6.679m-0.738-1.275v8.38l62.84 36.281v-8.595z" style="fill:#202333"></path>
+              </g>
+              <path id="path855" d="m141.34 837.58v-8.053" stroke-miterlimit="10" style="fill:#181922;stroke-miterlimit:10;stroke-width:2;stroke:#202333"></path>
+              <path id="path857" d="m252.3 907.67v14.3l-12.383 7.149-1e-3 -14.3 12.384-7.149m1.476-2.557-15.337 8.854 2e-3 17.709 15.335-8.854zm-29.197 2.557 12.384 7.149-1e-3 14.3-12.383-7.149v-14.3m-1.476-2.557v17.709l15.336 8.854 1e-3 -17.709z" style="fill:#ff9900"></path>
+              <path id="path859" d="m238.44 897.96 12.384 7.15-12.384 7.149-12.384-7.15 12.384-7.149m0-1.704-15.337 8.854 15.337 8.854 15.337-8.854z" style="fill:#fff"></path>
+              <g id="g873" style="opacity:.3">
+                <path id="path861" d="m310.68 710.5 7.034-4.061v8.122l-7.033 4.062z" style="fill:#fff"></path>
+                <path id="path863" d="m317.34 707.08v7.27l-6.295 3.635-1e-3 -7.27 6.296-3.635m0.738-1.278-7.772 4.487 1e-3 8.975 7.771-4.487z" style="fill:#fff"></path>
+                <path id="path865" d="m302.9 714.56v-8.122l7.034 4.061-1e-3 8.123z" style="fill:#fff"></path>
+                <path id="path867" d="m303.27 707.08 6.296 3.635-1e-3 7.27-6.295-3.635v-7.27m-0.738-1.278v8.975l7.771 4.487 1e-3 -8.975z" style="fill:#fff"></path>
+                <path id="path869" d="m303.27 705.8 7.034-4.061 7.034 4.061-7.034 4.062z" style="fill:#fff"></path>
+                <path id="path871" d="m310.31 702.17 6.296 3.635-6.296 3.635-6.296-3.635 6.296-3.635m0-0.853-7.772 4.487 7.772 4.487 7.772-4.487z" style="fill:#fff"></path>
+              </g>
+              <path id="path875" d="m-11.104 1017.6 61.364-35.429 61.363 35.429-61.363 35.429z" style="fill:#202333"></path>
+              <path id="path877" d="m50.26 982.98 59.887 34.575-59.887 34.576-59.887-34.576 59.887-34.575m0-1.705-62.84 36.28 62.84 36.281 62.839-36.281z" style="fill:#ff9900"></path>
+              <path id="path879" d="m73.844 968.76 61.363-35.428 61.363 35.428-61.363 35.429z" style="fill:#ff9900"></path>
+              <path id="path881" d="m135.21 934.19 59.887 34.576-59.887 34.575-59.887-34.575 59.887-34.576m0-1.705-62.84 36.28 62.84 36.28 62.84-36.28z" style="fill:#171820"></path>
+              <path id="path883" d="m169.4 1024 61.363-35.429 61.363 35.429-61.363 35.428z" style="fill:#fff"></path>
+              <path id="path885" d="m230.77 989.38 59.887 34.576-59.887 34.575-59.888-34.575 59.888-34.576m0-1.705-62.84 36.28 62.84 36.28 62.84-36.28z" style="fill:#ff9900"></path>
+              <path id="path887" d="m252.91 975.43 61.363-35.429 61.364 35.429-61.364 35.43z" style="fill:#202333"></path>
+              <path id="path889" d="m314.28 940.86 59.888 34.576-59.888 34.576-59.887-34.576 59.887-34.576m0-1.705-62.839 36.28 62.839 36.28 62.84-36.28z" style="fill:#ff9900"></path>
+              <path id="path891" d="m169.4 919.42 61.363-35.428 61.363 35.428-61.363 35.43z" style="fill:#202333"></path>
+              <path id="path893" d="m230.77 884.84 59.887 34.576-59.887 34.576-59.888-34.576 59.888-34.576m0-1.705-62.84 36.281 62.84 36.28 62.84-36.28z" style="fill:#ff9900"></path>
+              <path id="path895" d="m164.8 823.44 61.363-35.429 61.363 35.428-61.363 35.429z" style="fill:#ff9900"></path>
+              <path id="path897" d="m226.16 788.86 59.888 34.576-59.888 34.576-59.887-34.576 59.887-34.576m0-1.704-62.839 36.28 62.839 36.28 62.84-36.28z" style="fill:#171820"></path>
+              <path id="path899" d="m82.306 776.29 61.363-35.429 61.363 35.429-61.363 35.428z" style="fill:#202333"></path>
+              <path id="path901" d="m143.67 741.71 59.887 34.576-59.887 34.576-59.887-34.576 59.887-34.576m0-1.704-62.84 36.28 62.84 36.28 62.84-36.28z" style="fill:#ff9900"></path>
+              <path id="path903" d="m0.178 819.54 61.363-35.428 61.363 35.428-61.363 35.429z" style="fill:#202333"></path>
+              <path id="path905" d="m61.541 784.96 59.887 34.575-59.887 34.576-59.887-34.576 59.887-34.575m0-1.705-62.839 36.28 62.839 36.281 62.84-36.281z" style="fill:#ff9900"></path>
+              <path id="path907" d="m-89.768 767.92 61.364-35.428 61.363 35.428-61.363 35.429z" style="fill:#fff"></path>
+              <path id="path909" d="m-28.404 733.34 59.887 34.575-59.887 34.576-59.887-34.576 59.887-34.575m0-1.706-62.84 36.28 62.84 36.28 62.839-36.28z" style="fill:#171820"></path>
+              <path id="path911" d="m340.54 820.93 61.363-35.429 61.363 35.429-61.363 35.428z" style="fill:#202333"></path>
+              <path id="path913" d="m401.9 786.36 59.888 34.576-59.888 34.575-59.887-34.575 59.887-34.576m0-1.705-62.839 36.28 62.839 36.28 62.84-36.28z" style="fill:#ff9900"></path>
+              <path id="path915" d="m427.2 770.84 61.363-35.429 61.363 35.429-61.363 35.428z" style="fill:#ff9900"></path>
+              <path id="path917" d="m488.57 736.27 59.887 34.576-59.887 34.575-59.887-34.575 59.887-34.576m0-1.705-62.84 36.28 62.84 36.28 62.84-36.28z" style="fill:#171820"></path>
+              <path id="path919" d="m1026.2 709.71 61.363-35.428 61.363 35.428-61.363 35.429z" style="fill:#202333"></path>
+              <path id="path921" d="m1087.5 675.14 59.887 34.576-59.887 34.576-59.887-34.576 59.887-34.576m0-1.704-62.84 36.28 62.84 36.28 62.84-36.28z" style="fill:#ff9900"></path>
+              <path id="path923" d="m850.12 709.5 61.364-35.429 61.363 35.429-61.363 35.428z" style="fill:#fff"></path>
+              <path id="path925" d="m911.48 674.92 59.887 34.576-59.887 34.576-59.888-34.576 59.888-34.576m0-1.704-62.84 36.28 62.84 36.28 62.839-36.28z" style="fill:#171820"></path>
+              <path id="path927" d="m1113.9 659.12 61.363-35.429 61.363 35.429-61.363 35.428z" style="fill:#ff9900"></path>
+              <path id="path929" d="m1175.3 624.55 59.888 34.576-59.888 34.575-59.887-34.575 59.887-34.576m0-1.705-62.839 36.281 62.839 36.28 62.84-36.28z" style="fill:#171820"></path>
+              <path id="path931" d="m1206.2 706.12 61.363-35.428 61.363 35.428-61.363 35.428z" style="fill:#202333"></path>
+              <path id="path933" d="m1267.6 671.55 59.888 34.576-59.888 34.576-59.887-34.576 59.887-34.576m0-1.704-62.839 36.28 62.839 36.28 62.84-36.28z" style="fill:#ff9900"></path>
+              <path id="path935" d="m1291.4 656.67 61.363-35.428 61.363 35.428-61.363 35.429z" style="fill:#fff"></path>
+              <path id="path937" d="m1352.7 622.1 59.887 34.575-59.887 34.576-59.888-34.576 59.888-34.575m0-1.705-62.84 36.28 62.84 36.281 62.839-36.281z" style="fill:#171820"></path>
+              <path id="path939" d="m1376.3 607.66 61.363-35.428 61.363 35.428-61.363 35.428z" style="fill:#202333"></path>
+              <path id="path941" d="m1437.6 573.09 59.887 34.575-59.887 34.576-59.888-34.576 59.888-34.575m0-1.705-62.84 36.28 62.84 36.28 62.84-36.28z" style="fill:#ff9900"></path>
+              <path id="path943" d="m1203.4 607.66 61.363-35.428 61.363 35.428-61.363 35.428z" style="fill:#202333"></path>
+              <path id="path945" d="m1264.8 573.09 59.887 34.575-59.887 34.576-59.887-34.576 59.887-34.575m0-1.705-62.84 36.28 62.84 36.28 62.84-36.28z" style="fill:#ff9900"></path>
+              <path id="path947" d="m1289.2 558.15 61.363-35.429 61.363 35.429-61.363 35.428z" style="fill:#ff9900"></path>
+              <path id="path949" d="m1350.5 523.58 59.887 34.576-59.887 34.576-59.888-34.576 59.888-34.576m0-1.704-62.84 36.28 62.84 36.28 62.84-36.28z" style="fill:#171820"></path>
+              <path id="path951" d="m841.01 605.34 61.363-35.428 61.363 35.428-61.363 35.428z" style="fill:#202333"></path>
+              <path id="path953" d="m902.37 570.76 59.887 34.576-59.887 34.576-59.888-34.576 59.888-34.576m0-1.705-62.84 36.28 62.84 36.28 62.839-36.28z" style="fill:#ff9900"></path>
+              <path id="path955" d="m1000.1 688.42 62.102-35.643v7.529l-62.102 35.854z" style="fill:#202333"></path>
+              <path id="path957" d="m1061.8 653.42v6.68l-61.363 35.428v-6.889l61.363-35.219m0.738-1.275-62.84 36.066v8.594l62.84-36.28z" style="fill:#181922"></path>
+              <path id="path959" d="m937.26 660.31v-7.529l62.101 35.643v7.74z" style="fill:#202333"></path>
+              <path id="path961" d="m937.63 653.42 61.363 35.219v6.889l-61.363-35.428v-6.68m-0.738-1.275v8.38l62.839 36.28v-8.594z" style="fill:#181922"></path>
+              <path id="path963" d="m999.73 624.81v-8.489m92.75-45.025v-33.812" stroke-miterlimit="10" style="fill:none;stroke-miterlimit:10;stroke:#202333"></path>
+              <path display="none" id="path965" d="m1183.5 706.12v-8.914" stroke-miterlimit="10" style="fill:none;stroke-miterlimit:10;stroke-width:2;stroke:#ff9900"></path>
+              <path id="path967" d="m822.36 952.04 18.995-10.967v21.933l-18.993 10.968z" style="fill:#181922"></path>
+              <path id="path969" d="m840.99 941.71v21.081l-18.255 10.541-1e-3 -21.081 18.256-10.541m0.739-1.279-19.733 11.394 1e-3 22.785 19.731-11.393z" style="fill:#202333"></path>
+              <path id="path971" d="m802.63 963.01v-21.933l18.994 10.967-2e-3 21.934z" style="fill:#181922"></path>
+              <path id="path973" d="m803 941.71 18.257 10.541-1e-3 21.081l-18.255-10.541-1e-3 -21.081m-0.738-1.279v22.786l19.731 11.393 2e-3 -22.785z" style="fill:#202333"></path>
+              <path id="path975" d="m803 940.43 18.994-10.967 18.995 10.967-18.995 10.968z" style="fill:#181922"></path>
+              <path id="path977" d="m821.99 929.89 18.257 10.54-18.257 10.541-18.257-10.541 18.257-10.54m0-0.853-19.733 11.394 19.733 11.394 19.733-11.394z" style="fill:#202333"></path>
+              <path id="path979" d="m819.26 976.34 2.731-1.725-19.735-11.687-2.804 1.846z" style="fill:#111117"></path>
+              <path id="cubeLines1" display="none" stroke-dasharray="5" d="m302.54 703.48v36.783m7.772-41.96v36.783m7.773-31.606v36.782" stroke-miterlimit="10" style="fill:none;stroke-miterlimit:10;stroke-width:2;stroke:#ff9900"></path>
+              <path id="path983" d="m-11.403 919.08 61.664-35.603 61.664 35.602" stroke-miterlimit="10" style="fill:none;stroke-miterlimit:10;stroke:#ff9900"></path>
+              <path id="path985" d="m49.522 842.04v41.018l-60.183 34.749-4e-3 -41.018 60.187-34.749m0.738-1.279-61.664 35.602 4e-3 42.723 61.659-35.603v-42.722zm0.739 1.279 60.187 34.749-4e-3 41.018-60.183-34.749v-41.018m-0.739-1.279v42.722l61.66 35.602 4e-3 -42.722z" style="fill:#1f2232"></path>
+              <path id="path987" d="m1031.2 615.41 61.665-35.602 61.663 35.602" stroke-miterlimit="10" style="fill:none;stroke-miterlimit:10;stroke:#1f2232"></path>
+              <path id="path989" d="m1153.8 573.98v41.001l-60.183 34.749v-40.621l60.187-35.129m0.739-1.286-61.663 35.991v42.323l61.659-35.603z" style="fill:#1f2232"></path>
+              <path id="path991" d="m1031.6 572.9 60.927-35.175v41.869l-60.922 35.175z" style="fill:#181922"></path>
+              <path id="path993" d="m1092.2 538.37v41.018l-60.183 34.749v-41.017l60.188-34.75m0.738-1.278-61.664 35.603 0.01 42.722 61.659-35.603z" style="fill:#202333"></path>
+              <path id="path995" d="m1032 573.98 60.188 35.129v40.621l-60.184-34.749v-41.001m-0.739-1.286v42.713l61.659 35.602v-42.323z" style="fill:#ff9900"></path>
+              <path id="path997" d="m1093.3 579.6v-41.869l60.925 35.175v41.869z" style="fill:#181922"></path>
+              <path id="path999" d="m1093.6 538.37 60.188 34.75-0.01 41.017-60.183-34.749v-41.018m-0.739-1.278v42.722l61.659 35.602v-42.722z" style="fill:#ff9900"></path>
+              <g id="g1005" style="opacity:.6">
+                <path id="path1001" d="m1032 572.69 60.929-35.169 60.929 35.169-60.929 35.563z" style="fill:#181922"></path>
+                <path id="path1003" d="m1092.9 537.95 60.193 34.745-60.193 35.133-60.193-35.133 60.193-34.745m0-0.852-61.664 35.594 61.664 35.99 61.663-35.99z" style="fill:#ff9900"></path>
+              </g>
+              <g id="g1011" style="opacity:.8">
+                <path id="path1007" d="m-9.56 918.05 60.928-35.168 60.929 35.168-60.929 35.562z" style="fill:#181922"></path>
+                <path id="path1009" d="m51.368 883.3 60.193 34.744-60.193 35.134-60.193-35.132 60.193-34.746m0-0.851-61.664 35.593 61.664 35.991 61.664-35.991z" style="fill:#202333"></path>
+              </g>
+              <path id="path1013" d="m-10.295 918.05 61.664-35.601 61.664 35.601" stroke-miterlimit="10" style="fill:none;stroke-miterlimit:10;stroke:#ff9900"></path>
+              <path id="path1015" d="m112.29 876.62v41.001l-60.183 34.749-3e-3 -40.62 60.186-35.13m0.738-1.286-61.664 35.991 4e-3 42.323 61.66-35.603z" style="fill:#ff9900"></path>
+              <g id="g1021" style="opacity:.8">
+                <path id="path1017" d="m-9.926 875.55 60.925-35.176v41.868l-60.921 35.177z" style="fill:#181922"></path>
+                <path id="path1019" d="m50.63 841.01v41.017l-60.184 34.75-4e-3 -41.018 60.188-34.749m0.738-1.28-61.664 35.603 4e-3 42.722 61.659-35.602v-42.723z" style="fill:#202333"></path>
+              </g>
+              <path id="path1023" d="m-9.557 876.62 60.187 35.13-4e-3 40.62-60.183-34.749v-41.001m-0.738-1.286v42.713l61.659 35.602 4e-3 -42.323z" style="fill:#ff9900"></path>
+              <g id="g1029" style="opacity:.8">
+                <path id="path1025" d="m51.737 882.24v-41.868l60.926 35.176-5e-3 41.869z" style="fill:#181922"></path>
+                <path id="path1027" d="m52.106 841.01 60.188 34.749-5e-3 41.018-60.183-34.75v-41.017m-0.738-1.28v42.723l61.659 35.601 5e-3 -42.722z" style="fill:#ff9900"></path>
+              </g>
+              <g id="g1035" style="opacity:.6">
+                <path id="path1031" d="m-9.56 875.33 60.928-35.168 60.929 35.168-60.929 35.563z" style="fill:#181922"></path>
+                <path id="path1033" d="m51.368 840.59 60.193 34.744-60.193 35.133-60.193-35.133 60.193-34.744m0-0.853-61.664 35.594 61.664 35.991 61.664-35.991z" style="fill:#ff9900"></path>
+              </g>
+              <g id="cube1" data-svg-origin="302.5319519042969 437.44055556640615" transform="matrix(1,0,0,1,0,55)" style="visibility: hidden; opacity: 0;">
+                <path id="path1037" d="m310.68 710.5 7.034-4.061v8.122l-7.033 4.062z" style="fill:#202333"></path>
+                <path id="path1039" d="m317.34 707.08v7.27l-6.295 3.635-1e-3 -7.27 6.296-3.635m0.738-1.278-7.772 4.487 1e-3 8.975 7.771-4.487z" style="fill:#ff9900"></path>
+                <path id="path1041" d="m302.9 714.56v-8.122l7.034 4.061-1e-3 8.123z" style="fill:#202333"></path>
+                <path id="path1043" d="m303.27 707.08 6.296 3.635-1e-3 7.27-6.295-3.635v-7.27m-0.738-1.278v8.975l7.771 4.487 1e-3 -8.975z" style="fill:#ff9900"></path>
+                <path id="path1045" d="m303.27 705.8 7.034-4.061 7.034 4.061-7.034 4.062z" style="fill:#202333"></path>
+                <path id="path1047" d="m310.31 702.17 6.296 3.635-6.296 3.635-6.296-3.635 6.296-3.635m0-0.853-7.772 4.487 7.772 4.487 7.772-4.487z" style="fill:#ff9900"></path>
+              </g>
+              <g id="g1053" style="fill:#202333">
+                <path id="path1049" d="m937.63 652.14 62.101-36.075 62.102 36.075-62.102 35.633z"></path>
+                <path id="path1051" d="m999.73 616.49 61.363 35.646-61.363 35.21-61.363-35.21 61.363-35.646m0-0.854-62.839 36.504 62.839 36.058 62.84-36.058z"></path>
+              </g>
+              <path id="path1055" d="m1007 668.24 10.15-22.976-40.878 6.183 31.835-1.016z" style="fill:#fff"></path>
+              <path id="path1057" d="m995.76 653.09 7.677 4.432-0.327 3.283-13.933-7.198zm8.135 2.824v-3.322h-5.905z" style="fill:#ff9900"></path>
+            </g>
+            <g id="Capa_11" transform="translate(91.244 -338.96)" stroke-miterlimit="10" style="stroke-miterlimit:10;stroke-width:2">
+              <g id="g1065" style="fill:#171820;stroke:#202333">
+                <path id="path1061" d="m1183.5 775.9 32.911-19.001v-35.73l-34.076-19.983-32.94 19.018v36.066z"></path>
+                <path id="path1063" d="m1149.4 720.2 15.242 8.801 18.863-10.892 18.763 10.892 14.148-7.835m-14.148 29.094-18.763 11.229-19.008-10.892m19.008 25.299v-14.407m-18.863-32.488v21.39l18.863-10.257 18.763 10.126m0-21.259v21.259"></path>
+              </g>
+              <path id="path1067" d="m1183.5 718.11v22.024" style="fill:none;stroke:#202333"></path>
+              <path display="none" id="path1069" d="m1197.6 705.28v-106.23m-28.158 105.6v-107.28m14.071 10.867v105.16" style="fill:none;stroke:#ff9900"></path>
+            </g>
+            <g id="cube0" transform="translate(91.244 -338.96)">
+              <path id="path1072" d="m329.3 756.44v21.081l-18.255 10.541-1e-3 -21.081 18.256-10.541m0.738-1.278-19.733 11.394 1e-3 22.785 19.731-11.393zm-38.728 1.278 18.257 10.541-1e-3 21.081-18.255-10.541-1e-3 -21.081m-0.739-1.278v22.786l19.731 11.393 1e-3 -22.785z" style="fill:#ff9900"></path>
+              <path id="path1074" d="m310.31 744.62 18.257 10.541-18.257 10.54-18.257-10.54 18.257-10.541m0-0.853-19.733 11.394 19.733 11.394 19.733-11.394z" style="fill:#ff9900"></path>
+              <path id="path1076" d="m307.7 791.21 2.731-1.725-19.735-11.687-2.804 1.846z" style="fill:#111117"></path>
+            </g>
+            <g id="cube2" transform="matrix(1,0,0,1,91.244,-210.0001655631337)" data-svg-origin="712.4429638671875 1722.2450224609374" style="visibility: inherit; opacity: 1;">
+              <path id="path1079" d="m1183.9 611.65 14.062-8.119v16.237l-14.06 8.118z" style="fill:#202333"></path>
+              <path id="path1081" d="m1197.6 604.17v15.385l-13.321 7.691v-15.384l13.323-7.692m0.738-1.279-14.8 8.544v17.09l14.798-8.545z" style="fill:#ff9900"></path>
+              <path id="path1083" d="m1169.1 619.76v-16.237l14.062 8.119v16.236z" style="fill:#202333"></path>
+              <path id="path1085" d="m1169.4 604.17 13.324 7.692v15.384l-13.322-7.691v-15.385m-0.739-1.279v17.089l14.799 8.545 1e-3 -17.09z" style="fill:#ff9900"></path>
+              <path id="path1087" d="m1169.4 602.89 14.062-8.119 14.062 8.119-14.062 8.118z" style="fill:#202333"></path>
+              <path id="path1089" d="m1183.5 595.2 13.324 7.692-13.324 7.691-13.323-7.691 13.323-7.692m0-0.852-14.8 8.545 14.8 8.544 14.8-8.544z" style="fill:#ff9900"></path>
+            </g>
+            <g id="cubo_3" transform="translate(91.244 -338.96)">
+              <path id="path1092" d="m1216.8 761.7 18.995-10.966v21.933l-18.993 10.967z" style="fill:#171820"></path>
+              <path id="path1094" d="m1235.4 751.37v21.081l-18.255 10.541v-21.081l18.257-10.541m0.739-1.279-19.733 11.394 1e-3 22.785 19.731-11.393z" style="fill:#202333"></path>
+              <path id="path1096" d="m1197 772.67v-21.933l18.994 10.966v21.934z" style="fill:#171820"></path>
+              <path id="path1098" d="m1197.4 751.37 18.257 10.541v21.081l-18.255-10.541v-21.081m-0.738-1.279v22.786l19.73 11.393v-22.785z" style="fill:#202333"></path>
+              <path id="path1100" d="m1197.4 750.1 18.994-10.968 18.995 10.968-18.995 10.967z" style="fill:#171820"></path>
+              <path id="path1102" d="m1216.4 739.55 18.257 10.541-18.257 10.54-18.257-10.54 18.257-10.541m0-0.852-19.733 11.394 19.733 11.394 19.733-11.394z" style="fill:#202333"></path>
+            </g>
+            <g id="cubo_1_1_" transform="translate(91.244 -338.96)">
+              <path id="path1105" d="m250.14 904.82v21.081l-18.255 10.541-1e-3 -21.081 18.256-10.541m0.739-1.278-19.733 11.394 1e-3 22.785 19.731-11.393zm-38.729 1.278 18.257 10.541-1e-3 21.081-18.255-10.541-1e-3 -21.081m-0.738-1.278v22.786l19.731 11.393 1e-3 -22.785z" style="fill:#ff9900"></path>
+              <path id="path1107" d="m231.14 893.01 18.257 10.541-18.257 10.54-18.257-10.54 18.257-10.541m0-0.853-19.733 11.394 19.733 11.394 19.733-11.394z" style="fill:#ff9900"></path>
+              <path id="path1109" d="m228.53 939.59 2.731-1.725-19.735-11.687-2.804 1.846z" style="fill:#111117"></path>
+            </g>
+          </svg>
+    
+    
+    <script src="./static/index1_files/TweenMax.min.js.download"></script>
+    <script>
+var $circles = document.getElementsByClassName("dot-line1");
+var $circles2 = document.getElementsByClassName("dot-line2");
+var $circles3 = document.getElementsByClassName("dot-line3");
+var $circles4 = document.getElementsByClassName("dot-line4");
+var $circles5 = document.getElementsByClassName("dot-line5");
+var $circles6 = document.getElementsByClassName("dot-line6");
+var $circles7 = document.getElementsByClassName("dot-line7");
+var $circles8 = document.getElementsByClassName("dot-line8");
+
+var $cube1 = document.getElementById("cube1");
+var $cubeLines1 = document.getElementById("cubeLines1");
+
+var $cube2 = document.getElementById("cube2");
+console.log($cube2);
+
+var tl = new TimelineMax({ repeat: -1 });
+var tl2 = new TimelineMax({ repeat: -1 });
+var tl3 = new TimelineMax({ repeat: -1 });
+var tl4 = new TimelineMax({ repeat: -1 });
+var tl5 = new TimelineMax({ repeat: -1 });
+var tl6 = new TimelineMax({ repeat: -1 });
+var tl7 = new TimelineMax({ repeat: -1 });
+var tl2 = new TimelineMax({ repeat: -1 });
+var tl8 = new TimelineMax({ repeat: -1 });
+
+var cubetl = new TimelineMax({ repeat: -1, repeatDelay: 4 });
+var cubetl2 = new TimelineMax({ repeat: -1, repeatDelay: 2 });
+
+tl.staggerTo($circles, 0.01, { fill: "#ff9900", scale: 2 }, 0.1);
+tl.staggerTo($circles, 0.01, { fill: "#ff9900", scale: 1 }, 0.1, "-=2.2");
+
+tl2.staggerTo($circles2, 0.01, { fill: "#ff9900", scale: 2 }, 0.1);
+tl2.staggerTo($circles2, 0.01, { fill: "#ff9900", scale: 1 }, 0.1, "-=6.3");
+
+tl3.staggerTo($circles3, 0.01, { fill: "#ff9900", scale: 2 }, 0.1);
+tl3.staggerTo($circles3, 0.01, { fill: "#ff9900", scale: 1 }, 0.1, "-=3.3");
+
+tl4.staggerTo($circles4, 0.01, { fill: "#ff9900", scale: 2 }, 0.1);
+tl4.staggerTo($circles4, 0.01, { fill: "#ff9900", scale: 1 }, 0.1, "-=7.3");
+
+tl5.staggerTo($circles5, 0.01, { fill: "#ff9900", scale: 2 }, 0.1);
+tl5.staggerTo($circles5, 0.01, { fill: "#ff9900", scale: 1 }, 0.1, "-=2");
+
+tl6.staggerTo($circles6, 0.01, { fill: "#ff9900", scale: 2 }, -0.1);
+tl6.staggerTo($circles6, 0.01, { fill: "#ff9900", scale: 1 }, -0.1, "-=3.3");
+
+tl7.staggerTo($circles7, 0.01, { fill: "#ff9900", scale: 2 }, -0.1);
+tl7.staggerTo($circles7, 0.01, { fill: "#ff9900", scale: 1 }, -0.1, "-=1");
+
+tl8.staggerTo($circles8, 0.01, { fill: "#ff9900", scale: 2 }, 0.1);
+tl8.staggerTo($circles8, 0.01, { fill: "#ff9900", scale: 1 }, 0.1, "-=10.6");
+
+cubetl.to($cube1, 1, { y: 55, autoAlpha: 0, delay: 3 });
+
+cubetl2.to($cube2, 2.5, {
+  y: -210,
+  autoAlpha: 1,
+  delay: 3,
+  ease: Expo.easeOut
+});
+cubetl2.to($cube2, 1, { x: 91.244, y: -338.96, delay: 3 });
+document.querySelectorAll('.button').forEach(button => {
+
+let duration = 3000,
+    svg = button.querySelector('svg'),
+    svgPath = new Proxy({
+        y: null,
+        smoothing: null
+    }, {
+        set(target, key, value) {
+            target[key] = value;
+            if(target.y !== null && target.smoothing !== null) {
+                svg.innerHTML = getPath(target.y, target.smoothing, null);
+            }
+            return true;
+        },
+        get(target, key) {
+            return target[key];
+        }
+    });
+
+button.style.setProperty('--duration', duration);
+
+svgPath.y = 20;
+svgPath.smoothing = 0;
+
+button.addEventListener('click', e => {
+    
+    e.preventDefault();
+
+    if(!button.classList.contains('loading')) {
+
+        button.classList.add('loading');
+
+        gsap.to(svgPath, {
+            smoothing: .3,
+            duration: duration * .065 / 1000
+        });
+
+        gsap.to(svgPath, {
+            y: 12,
+            duration: duration * .265 / 1000,
+            delay: duration * .065 / 1000,
+            ease: Elastic.easeOut.config(1.12, .4)
+        });
+
+        setTimeout(() => {
+            svg.innerHTML = getPath(0, 0, [
+                [3, 14],
+                [8, 19],
+                [21, 6]
+            ]);
+        }, duration / 2);
+
+    }
+
+});
+
+});
+
+function getPoint(point, i, a, smoothing) {
+let cp = (current, previous, next, reverse) => {
+        let p = previous || current,
+            n = next || current,
+            o = {
+                length: Math.sqrt(Math.pow(n[0] - p[0], 2) + Math.pow(n[1] - p[1], 2)),
+                angle: Math.atan2(n[1] - p[1], n[0] - p[0])
+            },
+            angle = o.angle + (reverse ? Math.PI : 0),
+            length = o.length * smoothing;
+        return [current[0] + Math.cos(angle) * length, current[1] + Math.sin(angle) * length];
+    },
+    cps = cp(a[i - 1], a[i - 2], point, false),
+    cpe = cp(point, a[i - 1], a[i + 1], true);
+return `C ${cps[0]},${cps[1]} ${cpe[0]},${cpe[1]} ${point[0]},${point[1]}`;
+}
+
+function getPath(update, smoothing, pointsNew) {
+let points = pointsNew ? pointsNew : [
+        [4, 12],
+        [12, update],
+        [20, 12]
+    ],
+    d = points.reduce((acc, point, i, a) => i === 0 ? `M ${point[0]},${point[1]}` : `${acc} ${getPoint(point, i, a, smoothing)}`, '');
+return `<path d="${d}" />`;
+}
+/* Concept for a simple animated menu
+
+   ALERT: MESSY CODE!!!
+*/
+
+
+window.onload = function() {
+	bombMenu_init();
+	chameleonMenu_init(true);
+	switch_init();
+};
+
+/* menu animation */
+function bombMenu_init() {
+	var toggleMenuBtns = document.getElementsByClassName("menu-toggle-btn");
+	for(var i = 0; i < toggleMenuBtns.length; i++)  {
+		toggleMenuBtns[i].onclick = expand;		/* attach an event handler to every menu-toggle-btn in the page */
+	}
+	
+	function expand(e) {
+		e.target.classList.toggle("active");	/* show/hide menu through class 'active' */
+	}
+}
+
+/*'chameleon functionality - changes menu color to match background */
+var currentSectIndex;
+function chameleonMenu_init(isEnabled) {
+	if(isEnabled) {
+		setMenuColor();		/* trigger the event on enabling without scrolling */
+		window.addEventListener("scroll", setMenuColor);
+	} else if(!isEnabled) {
+		window.removeEventListener("scroll", setMenuColor);
+		currentSectIndex = undefined;
+	}
+}
+function setMenuColor() {
+	var sections = document.getElementsByClassName("section");	/* collect every section */
+	for(var i = 0; i < sections.length; i++) {
+		if( (currentSectIndex != i) && ( (sections[i].getBoundingClientRect().top < 42 && sections[i].getBoundingClientRect().top > -1) || (sections[i].getBoundingClientRect().bottom > 66 && sections[i].getBoundingClientRect().bottom < sections[i].getBoundingClientRect().height) ) ) {	//Need to change hardcoded values here
+			
+			/* Pick current bg color */
+			var currentBgColor = window.getComputedStyle(sections[i], null).getPropertyValue("background-color");
+			/* Set new colors */
+			forEach( document.getElementsByClassName("chameleon-menu"), function(){this.style.color = currentBgColor;} );
+			forEach( document.getElementsByClassName("line"), function(){this.setAttribute("stroke", currentBgColor);} );
+			
+			currentSectIndex = i;	/* keep track of current section to avoid unnecessary recoloring */
+		}
+	}
+}
+
+/* switch buttons functionality */
+function switch_init() {
+	var switches = document.getElementsByClassName("cmd-toggle");
+	for(var i = 0; i < switches.length; i++) {
+		switches[i].onclick = switchClass;
+	}
+	
+	function switchClass(e) {
+		var menu = document.getElementsByTagName("nav");
+		if(e.target.id == "chameleon-toggle") {		/* toggles chameleon functionality */
+			if(e.target.checked) {
+				forEach( menu, function(){this.classList.add("chameleon-menu");} );
+				chameleonMenu_init(true);
+			} else {
+				forEach( menu, function(){this.classList.remove("chameleon-menu");} );
+				chameleonMenu_init(false);
+				
+				/* Reset Color */
+				forEach( menu, function(){this.style.color = "#666";} );
+				forEach( document.getElementsByClassName("line"), function(){this.setAttribute("stroke", "#666");} );
+			}			
+		} else if (e.target.id == "align-toggle") {	/* controls menu alignment */
+			if(e.target.checked) {
+				forEach( menu, function(){this.classList.add("right-menu");} );
+				forEach( menu, function(){this.classList.remove("left-menu");} );
+			} else {
+				forEach( menu, function(){this.classList.add("left-menu");} );
+				forEach( menu, function(){this.classList.remove("right-menu");} );
+			}
+		}
+	}
+}
+
+/* Utility: just in case more than one menu is needed - shorthand for for loops */
+function forEach(nodeList, callback) {
+	for(var i = 0; i < nodeList.length; i++) {
+		callback.call(nodeList[i]);
+	}
+}
+    </script>
+</htnl></body></html>
