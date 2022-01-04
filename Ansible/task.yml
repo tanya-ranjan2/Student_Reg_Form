@@ -1,0 +1,20 @@
+# EC2 Instance launch through Ansible playbook
+- name: Ansible test
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: launching AWS instance using Ansible
+      ec2:
+        key_name: aws
+        instance_type: t2.micro
+        image: ami-04505e74c0741db8d
+        region: us-east-1
+        group: launch-wizard-4
+        count: 1
+        vpc_subnet_id: subnet-f17044d0
+        wait: yes
+        assign_public_ip: yes
+        aws_access_key: AKIA4WCTGP5MJK4DNKID
+        aws_secret_key: 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
+
+
