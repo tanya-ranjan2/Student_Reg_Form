@@ -49,6 +49,9 @@ Now we are ready to run the application and host it on AWS cloud, which is by th
 Through this, our application starts on AWS and we will now set some security groups on for the EC2 instance to get the public IP accessible from everywhere. 
 As our flask application is using port 5000, we make a rule for port 5000 accessible from anywhere in the security group.
 
+Using the public IP provided of our instance and the port where our app is hosted, we can use our application from anywhere which is http://54.90.96.229:5000/
+
+
 
 
 
