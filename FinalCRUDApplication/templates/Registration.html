@@ -1,0 +1,403 @@
+<!doctype html>
+                        <html>
+                            <head>
+                                <meta charset='utf-8'>
+                                <meta name='viewport' content='width=device-width, initial-scale=1'>
+                                <title>Registration</title>
+                                <link href="./static/index1_files/Amazon.png" rel="icon">
+                                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+                                <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' rel='stylesheet'>
+                                <link href='' rel='stylesheet'>
+                                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                                
+                                <style>
+.register {
+    background: #161626;
+    margin-top: 3%;
+    box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.7);
+    height: 635px;
+}
+
+.register-left {
+    text-align: center;
+    color: #ffffff;
+    margin-top: 4%;
+}
+
+.register-left input {
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+    width: 60%;
+    background: #f8f9fa;
+    font-weight: bold;
+    color: #383d41;
+    margin-top: 30%;
+    margin-bottom: 3%;
+    cursor: pointer;
+    box-shadow: 0px 10px 49px -14px rgba(0, 0, 0, 0.7);
+
+}
+
+.register-right {
+    background: #f8f9fa;
+    height: 635px;
+
+}
+
+.register-left img2 {
+    margin-top: 15%;
+    margin-bottom: 5%;
+    width: 25%;
+    -webkit-animation: mover 2s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+    
+}
+
+@-webkit-keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+.register-left p {
+    font-weight: lighter;
+    padding: 12%;
+    margin-top: -9%;
+}
+
+.register .register-form {
+    padding: 10%;
+    margin-top: 10%;
+}
+
+.btnRegister {
+    float: right;
+    margin-top: 10%;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 2%;
+    background: #fcb04d;
+    color: #fff;
+    font-weight: 600;
+    width: 50%;
+    cursor: pointer;
+}
+
+.btn-label {
+    position: relative;
+    left: -12px;display: inline-block;
+    padding: 6px 12px;
+    background: rgba(61, 61, 61, 0.15);
+    border-radius: 3px 0 0 3px;
+}
+
+.btn-labeled {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.btn {
+     margin-bottom:10px;
+     background: #f7f7f7;
+     border-radius: 1.5rem;
+     font-weight: bold;
+     padding: 2%;
+     width: 60%;
+
+     }
+
+.register .nav-tabs {
+    margin-top: 3%;
+    border: none;
+    background: #FEBD69;
+    border-radius: 1.5rem;
+    width: 28%;
+    float: right;
+}
+
+.register .nav-tabs .nav-link {
+    padding: 2%;
+    height: 34px;
+    font-weight: 600;
+    color: #fff;
+    border-top-right-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+}
+
+.register .nav-tabs .nav-link:hover {
+    border: none;
+}
+
+.register .nav-tabs .nav-link.active {
+    width: 100px;
+    color: #FEBD69;
+    border: 2px solid #FEBD69;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+}
+
+.register-heading {
+    text-align: center;
+    margin-top: 8%;
+    margin-bottom: -15%;
+    color: #495057;
+    
+}
+
+.loader {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 90px;
+  height: 90px;
+  transform-style: preserve-3d;
+  transform: rotateX(45deg) rotate(45deg);
+}
+.box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  background: #FED750;
+  box-shadow: 112.5px 112.5px 20px #000;
+  animation: move 2s ease-in-out infinite both;
+  transform-style: preserve-3d;
+}
+.box:nth-child(1) {
+  animation-delay: -1s;
+}
+.box:nth-child(2) {
+  animation-delay: -2s;
+}
+.box:nth-child(3) {
+  animation-delay: -3s;
+}
+.box:before, .box:after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+}
+.box:before {
+  top: 100%;
+  left: 0;
+  background: #E6A32F;
+  transform-origin: center top;
+  transform: rotateX(-90deg);
+}
+
+input{
+    padding: 2em;
+    border-width: 0;
+}
+
+.box:after {
+  top: 0;
+  left: 100%;
+  background: #C87932;
+  transform-origin: center left;
+  transform: rotateY(90deg);
+}
+@keyframes move {
+  0%, 100% {
+    transform: none;
+  }
+  12.5% {
+    transform: translate(30px, 0);
+  }
+  25% {
+    transform: translate(60px, 0);
+  }
+  37.5% {
+    transform: translate(60px, 30px);
+  }
+  50% {
+    transform: translate(60px, 60px);
+  }
+  62.5% {
+    transform: translate(30px, 60px);
+  }
+  75% {
+    transform: translate(0, 60px);
+  }
+  87.5% {
+    transform: translate(0, 30px);
+  }
+}
+.alert-success { border-color: #fbbf24;background: #fbbf24;color: #fff; }
+
+</style>
+                                <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+                                <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+                                <script type='text/javascript' src='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>
+                            </head>
+                            <body oncontextmenu='return false' class='snippet-body'>
+                            <div class="container register">
+    <div class="row">
+        <div class="col-md-3 register-left">
+            
+            <br></br>
+            <div class="m-auto flex justify-center">
+                <a href="/">
+                <img src="https://i.ibb.co/jyFyPXC/Pik-Png-com-run-dmc-png-5240809-1.png" width="100" height="90" alt="" />
+            </a>
+            </div>
+            <br></br>
+            <h4>Welcome</h4>
+            <p>Fill up your personal details!</p>
+            <a href = "/table" type="button" class="btn btn-labeled btn-default">Data-Table
+                <i class="fa fa-table" style="font-size:20px"></i>
+                </a>
+            <br>
+            <br>
+            <br>
+            <div class="">
+                <img src="./static/index1_files/Hero.gif" alt="" />
+              </div>
+            
+            
+        </div>
+        
+        <div class="col-md-9 register-right">
+      
+            <div class="tab-content" id="myTabContent">
+                <div class="w-full" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="w-full flex flex-col justify-center content-center	 h-2/5">
+                        <h3 class="pt-16 m-auto">
+                            Student Registration
+                        </h3>
+                        <ul class="m-auto py-6">
+                            {% with messages = get_flashed_messages()  %}
+                            {% if messages %}
+                            {% for message in messages %}
+                            <!--Foreach-->
+                            <li>
+                                <!--Place your compoet here-->
+                                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                    {{ message }}
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                      <span aria-hidden="true">×</span>
+                                    </button>
+                                  </div>                            </li>
+                                  {% endfor %}
+                                  {% endif %}
+                                  {% endwith %}
+                                </ul>
+                    </div>
+                    
+                    
+                    
+                    
+                    <div class="flex">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <form method="POST" action="/register">
+                                    <div class=" relative ">
+                                        <input type="text" id="rounded-email"  name="title" class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Enter your first name *" required=""/>
+                                    </div>
+                            </div>
+                          
+                            <div class="form-group">
+                                <div class=" relative ">
+                                    <input type="text" name="email" id="rounded-email"  class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Enter your email address" required=""/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <form method="POST" action="/register">
+
+                                <select class="rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 text-gray-400 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" name = "gender" >
+                                    <option class="rounded-t bg-white hover:bg-gray-200 py-2 px-4 block whitespace-no-wrap text-gray-400">Select your gender</option>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                    <option>Others</option>
+                                </select>
+                            </div>
+
+                            
+                            <div class="form-group">
+
+                                <div class=" relative ">
+                                    <input type="text" name="regno" id="rounded-email"  class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Enter your regstartion number" required=""/>
+                                </div>
+                            </div>
+                            <p class="py-6 text-gray-400 font-xs">* indicates as required</p>
+                            
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <form method="POST" action="/register">
+                                    <div class=" relative ">
+                                        <input type="text" name="lastname" id="rounded-email"  class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Enter your Last Name" required=""/>
+                                    </div>
+                           </div>
+                          
+                            <div class="form-group">
+                                <div class=" relative ">
+                                    <input type="text" name="phno" id="rounded-email"  class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Enter your phone number" pattern="(\+91)?(-)?\s*?(91)?\s*?(\d{3})-?\s*?(\d{3})-?\s*?(\d{4})"/>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <form method="POST" action="/register">
+
+                                <select class="rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 text-gray-400 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" name = "course" required="select any one" >
+                                    <option class="rounded-t bg-white hover:bg-gray-200 py-2 px-4 block whitespace-no-wrap text-gray-400"  selected disabled>Select your course</option>
+                                    <option>Msc BDA</option>
+                                    <option>Msc CS</option>
+                                    <option>Msc Mathematics</option>
+                                    <option>Msc Statistics</option>
+
+                                </select>
+                            </div>
+                            
+                            
+                            
+                           <div class="form-group">
+                                <form method="POST" action="/register">
+
+                                <select class="rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 text-gray-400 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" name = "sem" >
+                                    <option class="rounded-t bg-white hover:bg-gray-200 py-2 px-4 block whitespace-no-wrap text-gray-400"  selected disabled>Semester</option>
+                                    <option>1st Semester</option>
+                                    <option>2nd Semester</option>
+                                    <option>3rd Semester</option>
+                                    <option>4th Semester</option>
+
+                                </select>
+                            </div>
+                            
+                            <button type="submit" value="Register" class="py-2 px-4 pt bg-yellow-400 mt-6 hover:bg-yellow-700 focus:ring-yellow-500 focus:ring-offset-yellow-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+                                Register
+                            </button>
+<!-- 
+                            <button type="button" class="btn btn-labeled btn-default">
+                                <i class="" style="font-size:20px"></i>
+                                </button>
+                                <br></br>
+                            <input type="submit" class="btnRegister" value="Register" /> -->
+                            
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+
+</div>
+                            <script type='text/javascript'></script>
+                            </body>
+                        </html>
