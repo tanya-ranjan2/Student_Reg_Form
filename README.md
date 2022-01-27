@@ -24,10 +24,15 @@ Our project aims at creating an ec2 server in AWS using Ansible and hosting a fl
 - task.yml is the ansible script here to create EC2 instance. 
 
     >**Ansible script note:**
+    >
     >*Key_name: Go to EC2 dashboard -> Key pairs -> Create key pair -> Copy key pair name*
+    >
     >*Instance_type: You can select the instance type whichever you want to launch.* 
+    >
     >*Go to EC2 dashboard -> Launch instance -> Check instance type*
+    >
     >*Image: Go to EC2 dashboard -> Launch instance -> ami id (Image id)*
+    >
     >*Add  aws_access_key and aws_secret_key which we got from IAM user creation.*
 
 - Run the below command to check whether Ansible is ready to launch EC2 or not.
