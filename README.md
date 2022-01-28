@@ -59,7 +59,7 @@ We use the below command to get the local version of the repository from a remot
 
 Now our application repository with the code is on the EC2 instance. We will create a virtual environment and then all the required libraries are installed using the below command :
 
-> cd Student_Reg_Form/FlaskCRUDApplication2
+> cd Student_Reg_Form/FinalCRUDApplication
 
 #### Create a virtual environment
 > virtualenv venv 
@@ -71,14 +71,29 @@ Now our application repository with the code is on the EC2 instance. We will cre
 
 Now we are ready to run the application and host it on AWS cloud, which is by the below command:
 
-> python3 regpage.py
+> python3 app.py
 
 Through this, our application starts on AWS and we will now set some security groups on for the EC2 instance to get the public IP accessible from everywhere. 
 As our flask application is using port 5000, we make a rule for port 5000 accessible from anywhere in the security group.
 
 Using the public IP provided of our instance and the port where our app is hosted, we can use our application from anywhere which is http://54.90.96.229:5000/
 
+--------------------------------------------------------------------------------------------------------------
 
+*Run the script with **nohup** which ignores the hangup signal. This means that you can close the terminal without stopping the execution. Also, add **&** so the script runs in the background*
 
+> nohup app.py &
 
+You can find the process and its process Id with this command:
 
+> ps ax | grep app.py
+
+If you want to stop the execution, you can kill it with the kill command:
+
+> kill PID
+
+or
+
+> pkill -f app.py
+
+[Link to refer for nohup](https://janakiev.com/blog/python-background/)
